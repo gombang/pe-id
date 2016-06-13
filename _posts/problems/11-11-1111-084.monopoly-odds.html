@@ -2,7 +2,7 @@
 layout: problem
 category: problems
 difficulty: 35
-title: Keanehan Monopoly
+title: Peluang dalam Monopoly
 problemId: 84
 answer: 101524
 ---
@@ -83,11 +83,11 @@ answer: 101524
 </tr>
 </table>
 </div>
-<p>Seorang pemain mulai dari kotak GO, lalu jumlah dari dua buah dadu bersisi 6 yang dilemparkan akan menjadi jumlah kotak yang harus dilalui oleh pemain tersebut, kotak harus dilalui searah jarum jam. Kita dapat mengunjungi semua kotak dengan kemungkinan yang sama, yaitu: 2.5%. Tetapi, berada di G2J (Go To Jail/Masuk Penjara), CC (community chest/harta karun), dan CH (chance/kesempatan) akan membuat peluang berubah.</p>
-<p>Selain G2J, dan satu kartu dari CC serta CH, ada cara lain yang bisa membuat pemain untuk masuk PENJARA, yaitu jika pemain tiga kali berturut-turut mengeluarkan dadu yang kedua angkanya sama, mereka tidak maju pada putaran dadu ke tiga, tetapi mereka langsung menuju ke kotak PENJARA.</p>
-<p>Saat memulai permainan, tumpukan kartu CC dan CH diacak. Saat pemain sampai di kotak CC atau CH, ia akan mengambil satu kartu paling atas dari tumpukan yang sesuai, lalu setelah mengikuti petunjuk yang tertera pada kartu, kartu dikembalikan ke tumpukan yang paling bawah. Terdapat enam belas kartu dalam setiap tumpukan, namun dalam soal ini, kita hanya memperdulikan kartu yang bisa mempengaruhi perpindahan kotak dari pemain; segala kartu yang isinya tidak berkaitan dengan perpindahan kotak, tidak akan dipedulikan, dan pemain akan tetap berada di kotak CC/CH.</p>
+<p>Seorang pemain mulai dari petak GO, lalu jumlah dari dua buah dadu bermuka enam yang dilemparkan akan menjadi jumlah petak yang harus dilalui oleh pemain tersebut. Petak-petak harus dilalui searah jarum jam. Kita dapat mengunjungi semua petak dengan probabilitas yang sama, yaitu: 2.5%. Tetapi, berada di G2J (Go To Jail/Masuk Penjara), CC (community chest/dana umum), dan CH (chance/kesempatan) akan membuat peluang berubah.</p>
+<p>Selain G2J, dan satu kartu dari CC serta CH, ada cara lain yang bisa membuat pemain untuk masuk PENJARA, yaitu jika pemain tiga kali berturut-turut memperoleh dadu yang kedua angkanya sama, mereka tidak maju pada putaran dadu ketiga, tetapi mereka langsung menuju ke kotak PENJARA.</p>
+<p>Saat memulai permainan, tumpukan kartu CC dan CH diacak. Saat pemain sampai di kotak CC atau CH, ia akan mengambil satu kartu paling atas dari tumpukan yang sesuai, lalu setelah mengikuti petunjuk yang tertera pada kartu, kartu dikembalikan ke tumpukan yang paling bawah. Terdapat enam belas kartu dalam setiap tumpukan, namun dalam soal ini, kita hanya mempedulikan kartu yang bisa mempengaruhi perpindahan petak dari pemain; segala kartu yang isinya tidak berkaitan dengan perpindahan petak, tidak akan dipedulikan, dan pemain akan tetap berada di petak CC/CH.</p>
 <ul>
-<li>Community Chest/Harta Karun (2/16 kartu):
+<li>Community Chest/Dana Umum (2/16 kartu):
 <ol>
 <li>Pindah ke kotak GO</li>
 <li>Masuk ke PENJARA</li>
@@ -95,21 +95,21 @@ answer: 101524
 </li>
 <li>Chance/Kesempatan (10/16 cards):
 <ol>
-<li>Pindah ke kotak GO</li>
+<li>Pindah ke petak GO</li>
 <li>Masuk ke PENJARA</li>
-<li>Pindah ke kotak C1</li>
-<li>Pindah ke kotak E3</li>
-<li>Pindah ke kotak H2</li>
-<li>Pindah ke kotak R1</li>
-<li>Pindah ke kotak R selanjutnya (milik perusahaan railway)</li>
-<li>Pindah ke kotak R selanjutnya</li>
-<li>Pindah ke kotak U selanjutnya (milik perusahaan utility)</li>
-<li>Mundur 3 kotak.</li>
+<li>Pindah ke petak C1</li>
+<li>Pindah ke petak E3</li>
+<li>Pindah ke petak H2</li>
+<li>Pindah ke petak R1</li>
+<li>Pindah ke petak R selanjutnya (milik perusahaan kereta api/railway)</li>
+<li>Pindah ke petak R selanjutnya</li>
+<li>Pindah ke petak U selanjutnya (milik perusahaan listrik dan air)</li>
+<li>Mundur 3 petak.</li>
 </ol>
 </li>
 </ul>
-<p>Masalah utama dari soal ini berkaitan dengan kemungkinan untuk mengunjungi kotak tertentu setelah melakukan putaran dadu. Perlu dijelaskan, bahwa dengan mengabaikan kotak G2J, karena kotak ini tidak mungkin menjadi kotak yang ditempati setelah pemain memutar dadu, sehingga kotak G2J akan mempunyai nol kemungkinan untuk disinggahi setelah dadu diputar. Kotak CH akan memiliki peluang paling kecil untuk ditempati, karena 10 dari 16 kartu pada chance/kesempatan akan membuat pemain pindah ke kotak lain, dan kita hanya akan menghitung posisi paling akhir dari setiap putaran dadu pemain. Kita tidak akan membuat perbedaan antara &quot;hanya sekedar lewat&quot; dengan masuk ke PENJARA, dan kita juga akan mengabaikan aturan yang mengharuskan pemain memiliki dadu kembar untuk  &quot;keluar dari penjara&quot;, dengan asumsi semua pemain pasti membayar untuk keluar dari penjara.</p>
-<p>Dengan memulai dari kotak GO, lalu memberi nomor untuk setiap kotak secara berurutan dari 00 ke 39, kita dapat menggabungkan dua angka tersebut, untuk membentuk tulisan baru yang akan melambangkan kotak-kotak yang telah dikunjungi.</p>
-<p>Secara statistik, dapat ditunjukan tiga kotak yang paling populer dikunjungi. Secara berurutan kotak tersebut adalah, PENJARA (6.24%) = kotak ke-10, E3 (3.18%) = kotak ke-24, dan kotak GO (3.09%) = kotak ke-00. Sehingga ketiga kotak yang paling sering dikunjungi tersebut dapat ditulis dengan bilangan enam angka: 102400.</p>
-<p>Jika kita tidak menggunakan dadu dengan sisi 6, melainkan kedua dadu diganti menjadi dadu dengan banyak sisi 4, carilah bilangan enam angka yang melambangkan kotak yang paling sering dikunjungi seperti di atas.</p>
+<p>Masalah utama dari soal ini berkaitan dengan kemungkinan untuk mengunjungi petak tertentu setelah melakukan putaran dadu. Perlu dijelaskan, bahwa dengan mengabaikan petak G2J, karena petak ini tidak mungkin menjadi petak yang ditempati setelah pemain memutar dadu, sehingga petak G2J akan mempunyai probabilitas nol untuk disinggahi setelah dadu diputar. Petak CH akan memiliki peluang paling kecil untuk ditempati, karena 10 dari 16 kartu pada chance/kesempatan akan membuat pemain pindah ke petak lain, dan kita hanya akan menghitung posisi paling akhir dari setiap putaran dadu pemain. Kita tidak akan membuat perbedaan antara &quot;hanya sekedar lewat&quot; dengan masuk ke PENJARA, dan kita juga akan mengabaikan aturan yang mengharuskan pemain memiliki dadu kembar untuk  &quot;keluar dari penjara&quot;, dengan asumsi semua pemain pasti membayar untuk keluar dari penjara.</p>
+<p>Dengan memulai dari petak GO, lalu memberi nomor untuk setiap petak secara berurutan dari 00 ke 39, kita dapat merangkaikan bilangan dua digit tersebut, untuk membentuk untai yang akan melambangkan petak-petak yang telah dikunjungi.</p>
+<p>Secara statistik, dapat ditunjukan tiga petak yang paling populer dikunjungi. Secara berurutan petak tersebut adalah, PENJARA (6.24%) = petak ke-10, E3 (3.18%) = petak ke-24, dan petak GO (3.09%) = petak ke-00. Sehingga ketiga petak yang paling sering dikunjungi tersebut dapat ditulis dengan bilangan enam digit: 102400.</p>
+<p>Jika kita tidak menggunakan dadu bermuka enam, dan kedua dadu diganti menjadi dadu bermuka empat, carilah bilangan enam digit yang melambangkan kotak yang paling sering dikunjungi seperti di atas.</p>
 
