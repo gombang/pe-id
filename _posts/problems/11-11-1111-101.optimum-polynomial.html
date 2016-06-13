@@ -7,10 +7,10 @@ problemId: 101
 answer: 37076114526
 ---
 
-<p>Jika kita diberikan <var>k</var> buah suku pertama dari suatu barisan bilangan, tidak mungkin kita dapat menentukan nilai dari suku selanjutnya, karena terdapat tak terhingga kemungkinan rumus suku banyak bisa sesuai dengan barisan tersebut.</p>
-<p>Sebagai contoh, misalkan terdapat barisan bilangan kubik. Barisan ini dibentuk dengan fungsi, <br /><var>u</var><sub><var>n</var></sub> = <var>n</var><sup>3</sup>: 1, 8, 27, 64, 125, 216, ...</p>
-<p>Misalkan kita hanya diberikan dua suku pertama dari barisan ini. Bekerja dengan prinsip &quot;makin sederhana makin baik&quot; kita mungkin akan beranggapan bahwa barisan tersebut adalah barisan linear, dan memprediksi suku selanjutnya adalah 15 (karena memiliki beda yang sama, yaitu 7). Bahkan jika kita diberikan tiga suku pertama, dengan prinsip &quot;makin sederhana makin baik&quot;, kita mungkin bisa beranggapan bahwa hubungan barisan tersebut adalah hubungan kuadrat.</p>
-<p>OP(<var>k</var>, <var>n</var>) adalah fungsi yang akan memiliki <var>k</var> buah suku pertama yang benar saat dicocokan dengan barisan, jika nilai <var>n</var> disubtitusikan. OP(<var>k</var>, <var>n</var>) akan memiliki suku yang sesuai untuk <var>n</var> &le; <var>k</var>, dan kemungkinan, suku yang tidak sesuai pertama akan ditemukan saat OP(<var>k</var>, <var>k</var>+1); yang dalam soal ini akan disebut sebagai <i>bad OP</i> (BOP).</p>
+<p>Jika kita diberikan <var>k</var> buah suku pertama dari suatu barisan bilangan, tidak mungkin kita dapat menentukan nilai dari suku selanjutnya, karena terdapat tak terhingga kemungkinan rumus suku banyak yang bisa sesuai dengan barisan tersebut.</p>
+<p>Misalnya kita lihat barisan bilangan kubik. Barisan ini dibentuk dengan fungsi pembangkit <br /><var>u</var><sub><var>n</var></sub> = <var>n</var><sup>3</sup>: 1, 8, 27, 64, 125, 216, ...</p>
+<p>Misalkan kita hanya diberikan dua suku pertama dari barisan ini. Dengan menerapkan prinsip &quot;makin sederhana makin baik&quot; kita mungkin akan beranggapan bahwa barisan tersebut adalah barisan linear, dan memprediksi suku selanjutnya adalah 15 (karena memiliki beda yang sama, yaitu 7). Bahkan jika kita diberikan tiga suku pertama, dengan prinsip &quot;makin sederhana makin baik&quot;, kita mungkin bisa beranggapan bahwa hubungan barisan tersebut adalah hubungan kuadrat.</p>
+<p>OP(<var>k</var>, <var>n</var>) adalah fungsi yang akan memiliki <var>k</var> buah suku pertama yang benar saat dicocokkan dengan barisan, jika nilai <var>n</var> disubtitusikan. OP(<var>k</var>, <var>n</var>) akan memiliki suku yang sesuai untuk <var>n</var> &le; <var>k</var>, dan kemungkinan suku yang tidak sesuai pertama akan ditemukan saat OP(<var>k</var>, <var>k</var>+1); yang dalam soal ini akan disebut sebagai <i>bad OP</i> (BOP), yang berarti suku banyak optimum yang keliru.</p>
 <p>Sebagai contoh, jika kita hanya diberikan suku pertama dari barisan, kita mungkin akan menganggap barisan tersebut memiliki rumus konstan; sehingga, untuk <var>n</var> &ge; 2, OP(1, <var>n</var>) = <var>u</var><sub>1</sub>.</p>
 <p>Sehingga kita dapat menghitung OP untuk barisan bilangan kubik berikut:</p>
 <div style='margin-left:50px;'>
@@ -33,9 +33,9 @@ answer: 37076114526
 </tr>
 </table>
 </div>
-<p>Dapat terlihat bahwa tidak ada kesalahan lagi (BOP) saat <var>k</var> &ge; 4.</p>
-<p>Dengan menjumlahkan angka-angka pertama yang salah, saat dibuat rumus OP (ditandai dengan warna <span style='color:red;'><b>merah</b></span> pada bagian di atas), kita akan mendapatkan 1 + 15 + 58 = 74.</p>
-<p>Misalkan terdapat sebuah fungsi suku banyak pangkat sepuluh:</p>
+<p>Dapat terlihat bahwa tidak ada kesalahan lagi (tidak ada BOP) saat <var>k</var> &ge; 4.</p>
+<p>Dengan menjumlahkan suku-suku pertama yang salah, saat dibuat rumus OP (ditandai dengan warna <span style='color:red;'><b>merah</b></span> pada bagian di atas), kita akan mendapatkan 1 + 15 + 58 = 74.</p>
+<p>Misalkan terdapat sebuah fungsi pembangkit suku banyak derajat sepuluh:</p>
 <p style='text-align:center;'><var>u</var><sub><var>n</var></sub> = 1 &minus; <var>n</var> + <var>n</var><sup>2</sup> &minus; <var>n</var><sup>3</sup> + <var>n</var><sup>4</sup> &minus; <var>n</var><sup>5</sup> + <var>n</var><sup>6</sup> &minus; <var>n</var><sup>7</sup> + <var>n</var><sup>8</sup> &minus; <var>n</var><sup>9</sup> + <var>n</var><sup>10</sup></p>
-<p>Carilah jumlah angka-angka pertama yang salah, saat dibuat rumus OP.</p>
+<p>Carilah jumlah suku-suku pertama yang salah, saat dibuat rumus OP.</p>
 
