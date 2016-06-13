@@ -7,15 +7,15 @@ problemId: 109
 answer: 38182
 ---
 
-<p>Dalam permainan darts, seorang pemain akan melempar tiga buah dart ke papan target yang dibagi menjadi dua puluh bagian yang sama besar, diberi angka dari satu sampai dua puluh.</p>
+<p>Dalam permainan darts, seorang pemain akan melempar tiga batang dart (panah kecil) ke papan target yang dibagi menjadi dua puluh bagian yang sama besar, diberi angka dari satu sampai dua puluh.</p>
 <div style='text-align:center;'>
 <img src='{{ site.baseurl }}project/images/p109.gif' width='400' height='400' alt='' /><br />
 </div>
-<p>Nilai dari sebuah dart ditentukan dari angka yang dimiliki oleh daerah dimana dart tersebut mendarat. Jika dart mendarat di luar lingkaran merah/hijau, maka pemain akan mendapat nilai nol. Daerah berwarna hitam dan krim dalam lingkaran akan mengalikan nilai dengan satu. Tetapi, garis merah/hijau pada bagian luar dan bagian tengah lingkaran akan melipatgandakan nilai, masing-masing menjadi dua kali (double) dan tiga kali (treble).</p>
-<p>Pada tengah-tengah papan, terdapat dua buah lingkaran sepusat yang disebut bull region, atau bulls-eye. Bagian luar bull bernilai 25 poin, dan bagian dalam bull adalah double bull dan bernilai dua kali lipatnya, yaitu 50 poin.</p>
-<p>Terdapat berbagai variasi dari aturan yang ada, namun aturan yang paling sering digunakan adalah para pemain akan mulai dengan skor 301 atau 501, dan pemain pertama yang bisa mengurangi skornya sampai nol adalah pemenangnya. Tetapi, setiap pemain harus memperhatikan sistem &quot;doubles out&quot;, dimana setiap pemain harus mendaratkan dart terakhir mereka di mana saja yang memiliki nilai double(termasuk double bulls-eye berwarna merah di tengah papan) untuk menang; setiap tiga dart yang membuat nilai total pemain menjadi satu atau kurang dari satu, akan mengakibatkan skor ketiga dart tersebut diabaikan (&quot;bust&quot;).</p>
+<p>Nilai dari sebatang dart ditentukan dari angka yang dimiliki oleh daerah tempat dart tersebut mendarat. Jika dart mendarat di luar lingkaran merah/hijau, maka pemain akan mendapat nilai nol. Daerah berwarna hitam dan krim dalam lingkaran akan mengalikan nilai dengan satu. Tetapi, garis merah/hijau pada bagian luar dan bagian tengah lingkaran akan melipatgandakan nilai, masing-masing menjadi dua kali (double) dan tiga kali (treble).</p>
+<p>Pada tengah-tengah papan, terdapat dua lingkaran sepusat yang disebut <i>bull region<i/>, atau <i>bulls-eye<i/>. Bagian luar bull bernilai 25 poin, dan bagian dalam bull adalah <i>double bull</i> dan bernilai dua kali lipatnya, yaitu 50 poin.</p>
+<p>Terdapat berbagai variasi dari aturan yang ada, namun aturan yang paling sering digunakan adalah para pemain akan mulai dengan skor 301 atau 501, dan pemain pertama yang bisa mengurangi skornya sampai nol adalah pemenangnya. Tetapi, setiap pemain harus memperhatikan sistem &quot;doubles out&quot;, di mana setiap pemain harus mendaratkan dart terakhir mereka di mana saja yang memiliki nilai double(termasuk double bulls-eye berwarna merah di tengah papan) untuk menang; setiap tiga dart yang membuat nilai total pemain menjadi satu atau kurang dari satu, akan mengakibatkan skor ketiga dart tersebut diabaikan (&quot;bust&quot;).</p>
 <p>Saat seorang pemain dapat menyelesaikan permainannya, hal itu disebut &quot;checkout&quot; dan skor checkout tertinggi yang bisa didapat adalah 170: T20 T20 D25 (dua treble 20s dan double bull).</p>
-<p>Terdapat sebelas cara berbeda untuk melakukan checkout dengan nilai 6:</p>
+<p>Terdapat sebelas cara berbeda untuk melakukan checkout pada nilai 6:</p>
 <div style='text-align:center;'>
 <table border='1' cellpadding='3' cellspacing='0' align='center'>
 <tr>
@@ -78,5 +78,5 @@ answer: 38182
 <p>Perhatikan bahwa D1 D2 dianggap <b>berbeda</b> dengan D2 D1, karena mereka selesai di double yang berbeda. Tetapi, kombinasi S1 T1 D1 dianggap <b>sama</b> dengan T1 S1 D1.</p>
 <p>Sebagai tambahan, kita tidak akan mengikut sertakan dart yang meleset dalam kombinasi; sebagai contoh, D3 adalah <b>sama</b> dengan 0 D3 dan 0 0 D3.</p>
 <p>Luar biasanya, ternyata terdapat 42336 cara berbeda untuk melakukan checkout.</p>
-<p>Berapakah cara pemain dapat melakukan checkout dengan nilai kurang dari 100?</p>
+<p>Berapa banyak cara pemain dapat melakukan checkout pada nilai kurang dari 100?</p>
 
