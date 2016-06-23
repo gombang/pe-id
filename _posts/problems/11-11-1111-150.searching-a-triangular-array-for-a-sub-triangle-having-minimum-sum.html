@@ -7,12 +7,12 @@ problemId: 150
 answer: -271248680
 ---
 
-<p>Pada suatu barisan bilangan berbentuk segitiga, terdapat bilangan bulat positif dan negatif, kita akan mencari sebuah segitiga yang lebih kecil, yang akan memuat bilangan-bilangan yang memiliki hasil penjumlahan sekecil mungkin.</p>
+<p>Tinjaulah suatu larik (barisan) berbentuk segitiga, yang berisi bilangan bulat positif dan negatif. Kita akan mencari di dalamnya sebuah segitiga yang lebih kecil, yang akan memuat bilangan-bilangan yang memiliki hasil penjumlahan sekecil mungkin.</p>
 <p>Pada contoh berikut ini, kita dapat dengan mudah membuktikan bahwa segitiga yang ditandai memiliki hasil penjumlahan &minus;42.</p>
 <div style="text-align:center;">
 <img src="{{ site.baseurl }}project/images/p150.gif" border="0" alt="" />
 </div>
-<p>Kita akan membuat barisan bilangan berbentuk segitiga seperti di atas, namun dengan seratus buah baris, sehingga kita akan membuat 500500 buah angka acak <span style="font-style: italic">s<sub>k</sub></span> pada rentang &plusmn;2<sup>19</sup>, menggunakan sebuah alat pembentuk angka acak (yang dikenal sebagai Linear Congruential Generator) sebagai berikut:</p>
+<p>Kita akan membuat larik bilangan berbentuk segitiga seperti di atas, namun dengan seratus buah baris, sehingga kita akan membuat 500500 buah bilangan acak semu <span style="font-style: italic">s<sub>k</sub></span> pada rentang &plusmn;2<sup>19</sup>, menggunakan sebuah alat pembentuk angka acak semu (yang dikenal sebagai <i></i>Linear Congruential Generator</i>) sebagai berikut:</p>
 <p style="margin-left:50px;"><span style="font-style: italic">t</span> := 0
 <br />
 for k = 1 up to k = 500500:
@@ -21,7 +21,7 @@ for k = 1 up to k = 500500:
 <br />
 &nbsp; &nbsp; <span style="font-style: italic">s<sub>k</sub></span> := <span style="font-style: italic">t</span>&minus;2<sup>19</sup></p>
 <p>Sehingga: <span style="font-style: italic">s<sub>1</sub></span> = 273519, <span style="font-style: italic">s<sub>2</sub></span> = &minus;153582, <span style="font-style: italic">s<sub>3</sub></span> = 450905 etc</p>
-<p>Kemudian kita akan membentuk barisan bilangan berbentuk segitiga, dengan bilangan-bilangan acak tersebut:</p>
+<p>Kemudian kita akan membentuk larik berbentuk segitiga, yang berisi bilangan-bilangan acak tersebut:</p>
 <div style="text-align:center;font-style: italic;">
 s<sub>1</sub>
 <br />
