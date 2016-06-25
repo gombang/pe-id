@@ -7,14 +7,14 @@ problemId: 155
 answer: 3857447
 ---
 
-<p>Sebuah rangkaian listrik menggunakan kapasitor yang sama, yang memiiki kapasitansi C.
+<p>Sebuah rangkaian listrik menggunakan beberapa kapasitor yang serupa, yang semuanya memiiki kapasitansi C.
 <br />
-Kapasitor dapat dihubungkan baik secara seri ataupun pararel untuk membentuk sub-rangkaian, sub-rangkaian dapat juga dihubungkan secara seri atau pararel dengan kapasitor lain atau dengan sub-rangkaian lain untuk membentuk sub-rangkaian yang lebih besar, dan seterusnya sampai membentuk rangkaian final.</p>
-<p>Dengan menggunakan prosedur sederhana ini, dan jika tersedia sampai sebanyak <var>n</var> kapasitor identik, kita dapat membuat rangkaian yang memiliki nilai kapasitansi berbeda-beda. Sebagai contoh, dengan menggunakan maksimal sebanyak <var>n</var>=3 kapasitor dengan kapasitansi 60 <img src='{{ site.baseurl }}project/images/p155_capsmu.gif' width='12' height='21' alt=''  style='vertical-align:middle;' />F pada tiap kapastiornya, kita bisa mendapatkan tujuh nilai kapasitansi berbeda: </p>
+Kapasitor-kapasitor ini dapat dihubungkan baik secara seri ataupun paralel untuk membentuk sub-rangkaian. Selanjutnya Sub-rangkaian dapat juga dihubungkan secara seri atau paralel dengan kapasitor lain atau dengan sub-rangkaian lain untuk membentuk sub-rangkaian yang lebih besar, dan seterusnya sampai membentuk rangkaian final.</p>
+<p>Dengan menggunakan prosedur sederhana ini, dan jika tersedia sampai sebanyak <var>n</var> kapasitor identik, kita dapat membuat rangkaian yang memiliki nilai kapasitansi berbeda-beda. Sebagai contoh, dengan menggunakan maksimal sebanyak <var>n</var>=3 kapasitor dengan kapasitansi 60 <img src='{{ site.baseurl }}project/images/p155_capsmu.gif' width='12' height='21' alt=''  style='vertical-align:middle;' />F pada tiap kapasitornya, kita bisa mendapatkan tujuh nilai kapasitansi berbeda: </p>
 <div style='text-align:center;'><img src='{{ site.baseurl }}project/images/p155_capacitors1.gif' width='387' height='557' alt='' /></div>
 <p>Jika kita lambangkan <var>D</var>(<var>n</var>) sebagai banyaknya nilai kapasitansi berbeda yang bisa didapatkan saat disediakan sebanyak <var>n</var> buah kapasitor berkapasitansi sama, sesuai dengan prosedur di atas, kita akan mendapatkan: <var>D</var>(1)=1, <var>D</var>(2)=3, <var>D</var>(3)=7 ...</p>
 <p>Carilah <var>D</var>(18).</p>
-<p><i>Catatan :</i> Saat menghubungkan kapastior C<sub>1</sub>, C<sub>2</sub> dan seterusnya secara pararel, total kapasitansinya akan menjadi C<sub>T</sub>&nbsp;=&nbsp;C<sub>1</sub>&nbsp;+&nbsp;C<sub>2</sub>&nbsp;+...,
+<p><i>Catatan :</i> Saat menghubungkan kapastior C<sub>1</sub>, C<sub>2</sub> dan seterusnya secara paralel, total kapasitansinya akan menjadi C<sub>T</sub>&nbsp;=&nbsp;C<sub>1</sub>&nbsp;+&nbsp;C<sub>2</sub>&nbsp;+...,
 <br />
 Sedangkan saat dihubungkan secara seri, nilai kapasitansi total akan mengikuti aturan:
 <img src='{{ site.baseurl }}project/images/p155_capsform.gif' width='127' height='38' alt=''  style='vertical-align:middle;' /></p>
