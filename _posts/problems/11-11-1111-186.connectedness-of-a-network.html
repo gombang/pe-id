@@ -18,14 +18,14 @@ answer: 2325629
 <tr><td align='center'>...</td><td align='center'>...</td><td align='center'>...</td></tr>
 </table>
 </div>
-<p>Nomor telepon dari penelepon (caller) dan penerima (called) ke-n adalah Caller(n) = S<sub>2n-1</sub> dan Called(n) = S<sub>2n</sub> dimana S<sub>1,2,3,...</sub> dibuat dengan metode "Lagged Fibonacci Generator":</p>
+<p>Nomor telepon dari penelepon (caller) dan penerima (called) ke-n adalah Caller(n) = S<sub>2n-1</sub> dan Called(n) = S<sub>2n</sub> di mana S<sub>1,2,3,...</sub> didapatkan dengan metode "Lagged Fibonacci Generator":</p>
 
 <p>Untuk 1 &le; k &le; 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br />
 Untuk 56 &le; k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
 
 <p>Jika Caller(n) = Called(n), maka penelepon dianggap salah sambung, dan proses telepon tersebut dianggap gagal; sebaliknya, jika nomor penelepon dan penerima tidak sama, proses telepon dianggap sukses.</p>
 
-<p>Dari awal catatan, kita dapat mengatakan bahwa semua pasangan pengguna telepon X dan Y adalah saling berteman apabila X menelepon Y atau sebaliknya. Hal yang sama, X adalah teman dari Z jika X merupakan teman dari Y, dan Y merupakan teman dari Z; dan begitu seterusnya terbentuk rantai yang lebih panjang.</p>
+<p>Dari awal catatan, kita dapat mengatakan bahwa semua pasangan pengguna telepon X dan Y adalah saling berteman apabila X menelepon Y atau sebaliknya. Begitu juga, X adalah teman dari Z jika X merupakan teman dari Y, dan Y merupakan teman dari Z; dan begitu seterusnya terbentuk rantai yang lebih panjang.</p>
 
-<p>Nomor telepon perdana menteri adalah 524287. Setelah beberapa telepon yang berhasil tersambung, telepon yang salah sambung tidak dihitung, apakah 99% dari pengguna telepon (termasuk sang perdana menteri) akan menjadi teman, atau temannya teman, dan seterusnya..., dari sang perdana menteri?</p>
+<p>Nomor telepon perdana menteri adalah 524287. Setelah beberapa telepon yang berhasil tersambung, dan telepon yang salah sambung tidak dihitung, apakah 99% dari pengguna telepon (termasuk sang perdana menteri) akan menjadi teman, atau temannya teman, dan seterusnya..., dari sang perdana menteri?</p>
 
