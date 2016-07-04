@@ -7,16 +7,19 @@ problemId: 219
 answer: -1
 ---
 
-<p><span style="font-weight:bold">A</span> dan <span style="font-weight:bold">B</span> merupakan string biner (hanya berisi angka 0 dan 1).<br />
-Jika <span style="font-weight:bold">A</span> sama dengan bagian paling <span style="text-decoration:underline;">kiri</span> sepanjang length(<span style="font-weight:bold">A</span>) bit dari <span style="font-weight:bold">B</span>, maka <span style="font-weight:bold">A</span> dapat disebut sebagai <span style="font-style:italic">prefix</span> dari <span style="font-weight:bold">B</span>.<br />
-Sebagai contoh, 00110 adalah prefix dari <span style="text-decoration:underline;">00110</span>1001, tapi bukan prefix dari 00111 atau 100110.</p>
+<p><span style="font-weight:bold">A</span> dan <span style="font-weight:bold">B</span> merupakan untai (<i>string</i>) biner, yaitu hanya berisi angka 0 dan 1.<br />
+Jika <span style="font-weight:bold">A</span> sama dengan bagian paling <span style="text-decoration:underline;">kiri</span> sepanjang length(<span style="font-weight:bold">A</span>) bit dari <span style="font-weight:bold">B</span>, maka <span style="font-weight:bold">A</span> dapat disebut sebagai <span style="font-style:italic">prefiks</span> dari <span style="font-weight:bold">B</span>.<br />
+Sebagai contoh, 00110 adalah prefiks dari <span style="text-decoration:underline;">00110</span>1001, tapi bukan prefiks dari 00111 atau 100110.</p>
 
-<p>Sebuah <span style="font-style:italic">kode bebas prefix dengan ukuran</span> <var>n</var> adalah kumpulan <var>n</var> buah string biner berbeda, sehingga tidak ada string yang merupakan prefix string lainnya. Sebagai contoh, ini adalah sebuah kode bebas prefix dengan ukuran 6:</p>
+<p>Fungsi length(A), dengan A suatu untai, adalah panjang untai tersebut. Sebagai contoh length('10100') = 5, dan length('abcd') = 4.</p>
+
+<p>Sebuah <span style="font-style:italic">kode bebas-prefiks dengan ukuran</span> <var>n</var> adalah kumpulan <var>n</var> buah untai biner berbeda, sehingga tidak ada untai yang merupakan prefiks untai lainnya. Sebagai contoh, ini adalah sebuah kode bebas-prefiks dengan ukuran 6:</p>
 
 <p style="text-align:center;">0000, 0001, 001, 01, 10, 11</p>
 
-<p>Sekarang misalkan kita perlu membayar satu penny untuk mengirimkan sebuah bit '0', namun perlu empat penny untuk mengirimkan sebuah bit '1'.<br />
-Maka total biaya yang diperlukan pada kode bebas prefix di atas adalah 35 penny, yang merupakan kemungkinan biaya paling murah untuk pertanyaan ini.<br />
+<p>Sekarang misalkan kita perlu membayar satu <i>penny</i> untuk mengirimkan sebuah bit '0', namun perlu empat penny untuk mengirimkan sebuah bit '1'.<br />
+Maka total biaya yang diperlukan pada kode bebas-prefiks di atas adalah 35 penny, yang merupakan kemungkinan biaya paling murah untuk pertanyaan ini.<br />
 Secara singkat, kita akan menulis biaya dengan cara Cost(6) = 35.</p>
 
 <p>Berapakah Cost(10<sup>9</sup>) ?</p>
+
