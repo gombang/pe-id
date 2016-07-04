@@ -7,20 +7,20 @@ problemId: 220
 answer: -1
 ---
 
-<p><b><i>D</i></b><sub>0</sub> adalah string berisi dua karakter &quot;Fa&quot;. Sedangkan untuk n&ge;1, kita harus menurunkan <b><i>D</i></b><sub>n</sub> dari <b><i>D</i></b><sub>n-1</sub> dengan aturan penulisan string:</p>
+<p><b><i>D</i></b><sub>0</sub> adalah untai (<i>string</i>) berisi dua karakter &quot;Fa&quot;. Sedangkan untuk n&ge;1, kita harus menurunkan <b><i>D</i></b><sub>n</sub> dari <b><i>D</i></b><sub>n-1</sub> dengan aturan penulisan ulang untai:</p>
 
 <p style="margin-left:40px;">&quot;a&quot; &rarr; &quot;aRbFR&quot;<br />
 &quot;b&quot; &rarr; &quot;LFaLb&quot;</p>
 
 <p>Sehingga, <b><i>D</i></b><sub>0</sub> = &quot;Fa&quot;, <b><i>D</i></b><sub>1</sub> = &quot;FaRbFR&quot;, <b><i>D</i></b><sub>2</sub> = &quot;FaRbFRRLFaLbFR&quot;, dan seterusnya.</p>
 
-<p>String tersebut dapat di artikan sebagai suatu perintah pada aplikasi pembuat gambar di komputer, dengan &quot;F&quot; berarti  &quot;gambar garis ke depan satu satuan&quot;, &quot;L&quot; berarti &quot;berputar ke kiri 90 derajat&quot;, &quot;R&quot; berarti  &quot;berputar ke kanan 90 derajat&quot;, dan &quot;a&quot; serta &quot;b&quot; diabaikan.  Posisi awal kursor komputer adalah (0,0), dan menghadap ke atas, ke arah (0,1).</p>
+<p>Untai tersebut dapat diartikan sebagai suatu perintah pada aplikasi pembuat gambar di komputer, dengan &quot;F&quot; berarti  &quot;gambar garis ke depan satu satuan&quot;, &quot;L&quot; berarti &quot;berputar ke kiri 90 derajat&quot;, &quot;R&quot; berarti  &quot;berputar ke kanan 90 derajat&quot;, dan &quot;a&quot; serta &quot;b&quot; diabaikan.  Posisi awal kursor komputer adalah (0,0), dan menghadap ke atas, ke arah (0,1).</p>
 
-<p>Lalu <b><i>D</i></b><sub>n</sub> akan membentuk suatu gambar menarik yang dikenal sebagai <i>Heighway Dragon</i> dengan orde <i>n</i>.  Sebagai contoh, <b><i>D</i></b><sub>10</sub> ditunjukan pada gambar berikut; dengan menghitung setiap huruf &quot;F&quot; sebagai satu langkah, titik (18,16) yang di tandai tersebut bisa dicapai setelah berjalan 500 langkah.</p>
+<p>Lalu <b><i>D</i></b><sub>n</sub> akan membentuk suatu gambar menarik yang dikenal sebagai <i>Heighway Dragon</i> dengan orde <i>n</i>.  Sebagai contoh, <b><i>D</i></b><sub>10</sub> ditunjukan pada gambar berikut; dengan menghitung setiap huruf &quot;F&quot; sebagai satu langkah, titik (18,16) yang ditandai tersebut bisa dicapai setelah berjalan 500 langkah.</p>
 
 <div style="text-align:center;">
 <img src="{{ site.baseurl }}project/images/p220.gif" alt="" /></div>
 
-<p>Dimanakan posisi kursor setelah 10<sup>12</sup> langkah di <b><i>D</i></b><sub>50</sub> ?<br />
+<p>Di manakah posisi kursor setelah 10<sup>12</sup> langkah di <b><i>D</i></b><sub>50</sub> ?<br />
 Berikan jawaban Anda dengan format <i>x</i>,<i>y</i> tanpa spasi.</p>
 
