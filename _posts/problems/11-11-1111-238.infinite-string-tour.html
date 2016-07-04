@@ -11,7 +11,7 @@ answer: -1
 table.p238 td { padding: 0px 3px 0px 3px; }
 </style>
 
-<p>Buatlah sebuah barisan bilangan dengan alat pembuat bilangan acak "Blum Blum Shub":</p>
+<p>Buatlah sebuah barisan bilangan menggunakan pembangkit bilangan acak "Blum Blum Shub":</p>
 
 <center><table class="p238">
   <tr>
@@ -25,27 +25,27 @@ table.p238 td { padding: 0px 3px 0px 3px; }
   </tr>
 </table></center>
 
-<p>Lalu gabungkan bilangan-bilangan &thinsp;<var>s</var><sub>0</sub><var>s</var><sub>1</sub><var>s</var><sub>2</sub>&hellip; untuk membuat sebuah string <var>w</var> dengan panjang tak hingga.<br />
+<p>Rangkaikan bilangan-bilangan &thinsp;<var>s</var><sub>0</sub><var>s</var><sub>1</sub><var>s</var><sub>2</sub>&hellip; untuk membuat sebuah untai (<i>string</i>) <var>w</var> dengan panjang takhingga.<br />
 Maka, <var>w</var>&thinsp;=&thinsp;<span style='font-family:courier new;font-size:12pt;color:#0000ff;'>14025256741014958470038053646&hellip;</span></p>
 
-<p>Untuk bilangan bulat positif <var>k</var>, jika tidak terdapat substring dari <var>w</var> yang hasil penjumlahan angka-angkanya sama dengan <var>k</var>, <var>p</var>(<var>k</var>) akan dinyatakan sebesar nol. Jika setidaknya terdapat satu substring dari <var>w</var> yang memiliki hasil penjumlahan angka-angkanya sama dengan <var>k</var>, kita nyatakan <var>p</var>(<var>k</var>)&thinsp;=&thinsp;<var>z</var>, dimana <var>z</var> adalah posisi mulai dari substring tersebut.</p>
+<p>Untuk bilangan bulat positif <var>k</var>, jika tidak terdapat untai bagian (<i>substring</i>) dari <var>w</var> yang hasil penjumlahan digit-digitnya sama dengan <var>k</var>, <var>p</var>(<var>k</var>) akan dinyatakan sebesar nol. Jika setidaknya terdapat satu untai bagian dari <var>w</var> yang memiliki hasil penjumlahan digit-digitnya sama dengan <var>k</var>, kita nyatakan <var>p</var>(<var>k</var>)&thinsp;=&thinsp;<var>z</var>, di mana <var>z</var> adalah posisi mulai dari untai bagian tersebut.</p>
 
 <p>Sebagai contoh:</p>
 
-<p>Substrings <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>1</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>14</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>1402</span>, &hellip; <br />
-dengan hasil penjumlahan angka masing-masing sama dengan 1, 5, 7, &hellip;<br />
+<p>Untai bagian <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>1</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>14</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>1402</span>, &hellip; <br />
+dengan hasil penjumlahan digit masing-masing sama dengan 1, 5, 7, &hellip;<br />
 dimulai dari posisi <b>1</b>, sehingga <var>p</var>(1)&thinsp;=&thinsp;<var>p</var>(5)&thinsp;=&thinsp;<var>p</var>(7)&thinsp;=&thinsp;&hellip;&thinsp;=&thinsp;<b>1</b>.</p>
 
-<p>Substrings <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>4</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>402</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>4025</span>, &hellip;<br />
-dengan hasil penjumlahan angka masing-masing sama dengan 4, 6, 11, &hellip;<br />
+<p>Untai bagian <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>4</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>402</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>4025</span>, &hellip;<br />
+dengan hasil penjumlahan digit masing-masing sama dengan 4, 6, 11, &hellip;<br />
 dimulai dari posisi <b>2</b>, sehingga <var>p</var>(4)&thinsp;=&thinsp;<var>p</var>(6)&thinsp;=&thinsp;<var>p</var>(11)&thinsp;=&thinsp;&hellip;&thinsp;=&thinsp;<b>2</b>.</p>
 
-<p>Substrings <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>02</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>0252</span>, &hellip;<br />
-dengan hasil penjumlahan angka masing-masing sama dengan 2, 9, &hellip;<br />
+<p>Untai bagian <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>02</span>, <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>0252</span>, &hellip;<br />
+dengan hasil penjumlahan digit masing-masing sama dengan 2, 9, &hellip;<br />
 dimulai dari posisi <b>3</b>, sehingga <var>p</var>(2)&thinsp;=&thinsp;<var>p</var>(9)&thinsp;=&thinsp;&hellip;&thinsp;=&thinsp;<b>3</b>.<p>
 
-<p>Perhatikan bahwa substring <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>025</span> yang dimulai dari posisi <b>3</b>, memiliki hasil penjumlahan angka sama dengan 7, namun sudah terdapat substring lain (dimulai dari posisi <b>1</b>) yang telah memiliki hasil penjumlahan angka 7, sehingga <var>p</var>(7)&thinsp;=&thinsp;1, <i>bukan</i> 3.</p>
+<p>Perhatikan bahwa untai bagian <span style='font-family:courier new;font-size:12pt;color:#0000ff;'>025</span> yang dimulai dari posisi <b>3</b>, memiliki hasil penjumlahan digit sama dengan 7, namun sudah terdapat untai bagian lain (dimulai dari posisi <b>1</b>) yang telah memiliki hasil penjumlahan angka 7, sehingga <var>p</var>(7)&thinsp;=&thinsp;1, <i>bukan</i> 3.</p>
 
-<p>Kita dapat membuktikan bahwa, untuk 0&thinsp;<&thinsp;<var>k</var>&thinsp;&le;&thinsp;10<sup>3</sup>, &sum;&thinsp;<var>p</var>(<var>k</var>) = 4742.</p>
+<p>Kita dapat membuktikan bahwa untuk 0&thinsp;<&thinsp;<var>k</var>&thinsp;&le;&thinsp;10<sup>3</sup>, &sum;&thinsp;<var>p</var>(<var>k</var>) = 4742.</p>
 
 <p>Carilah &sum;&thinsp;<var>p</var>(<var>k</var>), untuk 0&thinsp;<&thinsp;<var>k</var>&thinsp;&le;&thinsp;2&middot;10<sup>15</sup>.</p>
