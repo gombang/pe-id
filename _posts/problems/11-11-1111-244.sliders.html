@@ -7,15 +7,15 @@ problemId: 244
 answer: -1
 ---
 
-<p>Anda mungkin telah mengetahui permainan <i>Fifteen Puzzle</i>. Disini, bukan menggunakan kotak bernomor, kita akan menggunakan tujuh kotak merah dan delapan kotak biru.</p>
-<p>Sebuah gerakan dilambangkan dengan huruf kapital dari arah yang di inginkan (Left/Kiri, Right/Kanan, Up/Atas, Down/Bawah), yang akan melambangkan arah kotak bergeser untuk mengisi kotak kosong, sebagai contoh, dimulai dari konfigurasi (<b>S</b>), dengan urutan <b>LULUR</b> kita akan mencapai konfigurasi (<b>E</b>):</p>
+<p>Anda mungkin telah mengetahui permainan <i>Fifteen Puzzle</i>. Di sini, sebagai ganti kotak bernomor, kita akan menggunakan tujuh kotak merah dan delapan kotak biru.</p>
+<p>Sebuah gerakan dilambangkan dengan huruf kapital dari arah yang diinginkan (Left/Kiri, Right/Kanan, Up/Atas, Down/Bawah), yang akan melambangkan arah geser kotak untuk mengisi ruang kosong. Sebagai contoh, dimulai dari konfigurasi (<b>S</b>), dengan urutan <b>LULUR</b> kita akan mencapai konfigurasi (<b>E</b>):</p>
 <p><div style="text-align: center;">
 <table cellspacing='0' cellpadding='2' border='0' align='center'>
 <tr><td width = '25'>(<b>S</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_start.gif" /></td><td width = '25'>,&nbsp;(<b>E</b>)</td><td width='100'><img src="{{ site.baseurl }}project/images/p244_example.gif" /></td>
 </table>
 </div>
 </p>
-<p>Untuk setiap jalan, nilai checksum dapat dihitung dengan:
+<p>Untuk setiap jalan, nilai <i>checksum</i> dapat dihitung dengan:
 <div style="margin-left: 100px;">
 checksum = 0<br />
 checksum = (checksum &times; 243 + <var>m</var><sub>1</sub>) mod 100&thinsp;000&thinsp;007<br />
@@ -23,7 +23,7 @@ checksum = (checksum &times; 243 + <var>m</var><sub>2</sub>) mod 100&thinsp;000&
 &nbsp;&nbsp;&nbsp;&hellip;<br />
 checksum = (checksum &times; 243 + <var>m</var><sub><var>n</var></sub>) mod 100&thinsp;000&thinsp;007<br />
 </div>
-Dimana <var>m</var><sub><var>k</var></sub> adalah nilai ASCII dari huruf ke-<var>k</var><sup></sup>, pada urutan gerak, dan nilai ASCII untuk masing-masing gerakan adalah:
+Di mana <var>m</var><sub><var>k</var></sub> adalah nilai ASCII dari huruf ke-<var>k</var><sup></sup>, pada urutan gerak, dan nilai ASCII untuk masing-masing gerakan adalah:
 
 <div style='text-align:center;'>
 <table cellspacing='0' cellpadding='2' border='1' align='center'>
@@ -43,4 +43,4 @@ carilah semua jalur terpendek untuk mencapai konfigurasi (<b>T</b>).</p>
 </table>
 </div>
 </p>
-<p>Berapakah hasil penjumlahan dari semua checksums untuk jalur yang memiliki jarak terpendek?</p>
+<p>Berapakah hasil penjumlahan dari semua checksum untuk jalur yang memiliki jarak terpendek?</p>
