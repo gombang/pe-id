@@ -7,9 +7,9 @@ problemId: 255
 answer: -1
 ---
 
-<p>Kita akan menyatakan suatu <i>akar-kuadrat-dibulatkan</i> sebuah bilangan bulat positif <var>n</var>, sebagai akar kuadrat dari <var>n</var> yang dibulatkan ke bilangan bulat terdekat.</p>
+<p>Kita akan menyatakan suatu <i>akar-kuadrat-dibulatkan</i> dari sebuah bilangan bulat positif <var>n</var> sebagai akar kuadrat dari <var>n</var> yang dibulatkan ke bilangan bulat terdekat.</p>
 
-<p>Prosedur berikut ini (didasari dari metode Heron yang diadaptasikan dengan aritmatika bilangan bulat) akan menemukan akar-kuadrat-dibulatkan dari <var>n</var>:</p>
+<p>Prosedur berikut ini (didasarkan pada metode Heron yang diadaptasikan dengan aritmetika bilangan bulat) akan menemukan akar-kuadrat-dibulatkan dari <var>n</var>:</p>
 <p><var>d</var> adalah banyaknya angka (digit) dari bilangan <var>n</var>.<br />
 Jika <var>d</var> bernilai ganjil, tetapkan <var>x</var><sub>0</sub> = 2&times;10<sup>(<var>d</var>-1)&frasl;2</sup>.<br />
 Jika <var>d</var> bernilai genap, tetapkan <var>x</var><sub>0</sub> = 7&times;10<sup>(<var>d</var>-2)&frasl;2</sup>.<br />
@@ -28,17 +28,17 @@ Ulangi:</p>
 <p>sampai <var>x</var><sub><var>k</var>+1</sub> = <var>x</var><sub><var>k</var></sub>.
 </p>
 <p>Sebagai contoh, kita akan mencari akar-kuadrat-dibulatkan dari <var>n</var> = 4321.<br />
-<var>n</var> mempunyai 4 angka (digit), sehingga <var>x</var><sub>0</sub> = 7&times;10<sup>(4-2)&frasl;2</sup> = 70.<br />
+<var>n</var> mempunyai 4 digit, sehingga <var>x</var><sub>0</sub> = 7&times;10<sup>(4-2)&frasl;2</sup> = 70.<br />
 <img src='{{ site.baseurl }}project/images/p255_Example.gif'>
 <!--<var>x</var><sub>1</sub> = &lfloor;(70 + &lceil;4321&frasl;70&rceil;)&frasl;2&rfloor; = 66.<br />
 <var>x</var><sub>2</sub> = &lfloor;(66 + &lceil;4321&frasl;66&rceil;)&frasl;2&rfloor; = 66.--><br />
 Karena <var>x</var><sub>2</sub> = <var>x</var><sub>1</sub>, maka kita berhenti sampai di sini.<br />
-Sehingga, setelah dua kali pengulangan (iterasi), kita telah menemukan akar-kuadrat-dibulatkan dari 4321 adalah 66 (akar kuadrat aslinya adalah 65.7343137&hellip;).
+Setelah dua kali iterasi (pengulangan), kita  menemukan akar-kuadrat-dibulatkan dari 4321 adalah 66 (akar kuadrat aslinya adalah 65.7343137&hellip;).
 </p>
-<p>Banyaknya pengulangan (iterasi) yang diperlukan saat menggunakan metode ini cukup rendah.<br />
+<p>Banyaknya pengulangan yang diperlukan saat menggunakan metode ini cukup rendah.<br />
 Sebagai contoh, kita dapat mencari akar-kuadrat-dibulatkan dari bilangan bulat 5 angka (digit) (10,000 &le; <var>n</var> &le; 99,999) dengan rata-rata 3.2102888889 kali pengulangan (rata-rata tersebut telah dibulatkan 10 angka di belakang koma).
 </p>
-<p>Dengan menggunakan prosedur seperti di atas, berapakah rata-rata banyaknya pengulangan (iterasi) yang diperlukan untuk mencari akar-kuadrat-dibulatkan dari bilangan 14 angka (digit) (10<sup>13</sup> &le; <var>n</var> &lt; 10<sup>14</sup>)?<br />
+<p>Dengan menggunakan prosedur seperti di atas, berapakah rata-rata banyaknya iterasi yang diperlukan untuk mencari akar-kuadrat-dibulatkan dari bilangan 14 angka (digit) (10<sup>13</sup> &le; <var>n</var> &lt; 10<sup>14</sup>)?<br />
 Berikan jawaban Anda dibulatkan 10 angka di belakang koma.
 </p>
 <p>Catatan: Lambang &lfloor;<var>x</var>&rfloor; dan &lceil;<var>x</var>&rceil; memiliki arti masing-masing <dfn title='the largest integer not greater than x'>dibulatkan ke bawah</dfn> dan <dfn title='the smallest integer not less than x'>dibulatkan ke atas</dfn>.
