@@ -7,23 +7,23 @@ problemId: 301
 answer: 2178309
 ---
 
-<p><i>Nim</i> adalah sebuah permainan yang dimainkan menggunakan tumpukan batu, dimana dua pemain mengambil batu sebanyak yang diinginkannya dari tumpukan manapun, sampai tidak ada batu tersisa.</p>
+<p><i>Nim</i> adalah sebuah permainan yang dimainkan menggunakan tumpukan batu, di mana dua pemain mengambil batu sebanyak yang diinginkannya dari tumpukan manapun, sampai tidak ada batu tersisa.</p>
 
 <p>Kita akan memainkan permainan Nim versi normal tiga tumpukan, yang memiliki aturan sebagai berikut:<br />
 - Saat permaian dimulai, terdapat tiga tumpukan batu.<br />
 - Pada gilirannya, seorang pemain mengambil berapapun jumlah batu dari salah satu tumpukan.<br />
 - Pemain pertama yang tidak bisa mengambil batu lagi (karena tidak ada batu tersisa) adalah pemain yang kalah.</p>
 
-<p> Jika (<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) melambangkan Nim dengan masing-masing tumpukan memiliki <var>n</var><sub>1</sub>, <var>n</var><sub>2</sub> dan <var>n</var><sub>3</sub> buah batu, maka terdapat fungsi sederhana <var>X</var>(<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) &mdash; yang bisa anda cari atau anda coba simpulkan sendiri &mdash; yang akan menghasilkan:
+<p> Jika (<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) melambangkan keadaan Nim ketika masing-masing tumpukan memiliki <var>n</var><sub>1</sub>, <var>n</var><sub>2</sub> dan <var>n</var><sub>3</sub> buah batu, maka terdapat fungsi sederhana <var>X</var>(<var>n</var><sub>1</sub>,<var>n</var><sub>2</sub>,<var>n</var><sub>3</sub>) &mdash; yang bisa anda cari atau anda coba simpulkan sendiri &mdash; yang akan menghasilkan:
 <ul><li>nol jika, dengan strategi yang sempurna, pemain yang akan memulai permainan pertama kali akan kalah; atau</li>
 <li>bukan nol jika, dengan strategi yang sempurna, pemain yang akan memulai permainan pertama kali akan menang.</li></ul>
 </p>
 
-<p>Sebagai contoh <var>X</var>(1,2,3) = 0 karena, tidak peduli apapun yang dilakukan oleh pemain pertama, lawannya selalu akan dapat melakukan gerakan yang akan meninggalkan dua buah tumpukan dengan jumlah batu yang sama, yang dimana setiap gerakan pemain pertama akan selalu dapat diikuti oleh lawannya sampai tidak ada batu tersisa; sehingga pemain pertama akan kalah. Untuk mengambarkan:<br />
+<p>Sebagai contoh <var>X</var>(1,2,3) = 0 karena, tidak peduli apapun yang dilakukan oleh pemain pertama, lawannya selalu akan dapat melakukan gerakan yang akan meninggalkan dua buah tumpukan dengan jumlah batu yang sama. Pada titik ini setiap gerakan pemain pertama akan selalu dapat diikuti oleh lawannya sampai tidak ada batu tersisa; sehingga pemain pertama akan kalah. Sebagai gambaran:<br />
 - Pemain pertama melakukan gerakan sehingga tumpukan menjadi (1,2,1)<br />
-- Pemain kedua merubah tumpukan menjadi (1,0,1)<br />
-- Pemain pertama merubah tumpukan menjadi (0,0,1)<br />
-- Pemain kedua merubah tumpukan menjadi (0,0,0), dan kemudian ia menang.</p>
+- Pemain kedua mengubah tumpukan menjadi (1,0,1)<br />
+- Pemain pertama mengubah tumpukan menjadi (0,0,1)<br />
+- Pemain kedua mengubah tumpukan menjadi (0,0,0), dan kemudian ia menang.</p>
 
 <p>Untuk berapa banyak bilangan bulat <var>n</var>&thinsp;&le;&thinsp;2<sup>30</sup> yang menyebabkan <var>X</var>(<var>n</var>,2<var>n</var>,3<var>n</var>) = 0 ?
 </p>
