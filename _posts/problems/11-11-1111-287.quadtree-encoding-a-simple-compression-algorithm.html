@@ -7,17 +7,17 @@ problemId: 287
 answer: -1
 ---
 
-<p>Algoritma quadtree encoding memungkinkan kita untuk dapat menuliskan gambar hitam dan putih berukuran 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> sebagai barisan bit (0 dan 1). Barisan tersebut dibaca dari kiri ke kanan seperti ini:
+<p>Algoritma <i>quadtree encoding</i> memungkinkan kita untuk dapat melambangkan gambar hitam dan putih berukuran 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup> sebagai barisan bit (0 dan 1). Barisan tersebut dibaca dari kiri ke kanan seperti ini:
 <ul><li>bit pertama melambangkan semua daerah 2<sup><var>N</var></sup>&times;2<sup><var>N</var></sup>;</li>
 <li>"0" melambangkan pemisahan:
 <br />daerah berukuran 2<sup><var>n</var></sup>&times;2<sup><var>n</var></sup> harus dipisah menjadi 4 sub daerah dengan ukuran 2<sup><var>n</var>-1</sup>&times;2<sup><var>n</var>-1</sup>,<br />
 bit selanjutnya melambangkan sub daerah kiri atas, kanan atas, kiri bawah, dan kanan bawah secara berurutan;</li>
 <li>"10" melambangkan bahwa daerah tersebut berisi hanya piksel hitam;</li>
-<li>"11" melambangkan bahwa daerah tersebut berisis hanya piksel putih.</li></ul></p>
+<li>"11" melambangkan bahwa daerah tersebut berisi hanya piksel putih.</li></ul></p>
 
-<p>Perhatikan gambar berukuran 4&times;4 berikut (tanda berwarna menunjukkan tempat dimana proses pemisahan dapat berlangsung):</p>
+<p>Perhatikan gambar berukuran 4&times;4 berikut (tanda berwarna menunjukkan tempat proses pemisahan dapat berlangsung):</p>
 <div align='center'><img src="{{ site.baseurl }}project/images/p287_quadtree.gif" /></div>
-<p>Gambar ini dapat dituliskan dengan beberapa barisan, sebagai contoh :<bp />
+<p>Gambar ini dapat dilambangkan oleh beberapa barisan, sebagai contoh :<bp />
 "<span style='color:red;'><b>0</b></span><span style='color:blue;'><b>0</b></span>10101010<span style='color:green;'><b>0</b></span>1011111011<span style='color:orange;'><b>0</b></span>10101010", dengan panjang 30, atau<br />
 "<span style='color:red;'><b>0</b></span>10<span style='color:green;'><b>0</b></span>101111101110", dengan panjang 16, yang dimana merupakan panjang barisan terpendek untuk gambar ini.</p>
 
@@ -26,4 +26,4 @@ bit selanjutnya melambangkan sub daerah kiri atas, kanan atas, kiri bawah, dan k
 <li>jika (<var>x</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;+&thinsp;(<var>y</var>&thinsp;-&thinsp;2<sup><var>N</var>-1</sup>)<sup>2</sup>&thinsp;&le;&thinsp;2<sup>2<var>N</var>-2</sup> maka piksel tersebut berwarna hitam,</li>
 <li>jika tidak, piksel tersebut bewarna putih.</li></ul></p>
 
-<p>Berapakah panjang barisan terpendek yang dapat menggambarkan gambar <var>D</var><sub>24</sub>&thinsp;?</p>
+<p>Berapakah panjang barisan terpendek yang dapat mewakili gambar <var>D</var><sub>24</sub>&thinsp;?</p>
