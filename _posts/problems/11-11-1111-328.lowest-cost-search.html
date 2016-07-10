@@ -7,8 +7,8 @@ problemId: 328
 answer: -1
 ---
 
-<p>Kita akan mencoba untuk menebak bilangan tersembunyi yang dipilih dari himpunan bilangan bulat {1, 2, ..., <var>n</var>} dengan menanyakan pertanyaan. 
-Setiap bilangan (pertanyaan) yang kita coba tebak, memiliki <u>harga yang sama dengan nilai bilangan tersebut</u> dan kita akan mendapatkan salah satu dari tiga kemungkinan jawaban :<br />
+<p>Kita akan mencoba untuk menebak bilangan tersembunyi yang dipilih dari himpunan bilangan bulat {1, 2, ..., <var>n</var>} dengan mengajukan pertanyaan. 
+Setiap bilangan (pertanyaan) yang kita coba tebak, memiliki <u>"biaya" yang sama dengan nilai bilangan tersebut</u> dan kita akan mendapatkan salah satu dari tiga kemungkinan jawaban :<br />
 <ul>
 <li> "Tebakan Anda lebih rendah dari bilangan yang tersembunyi", atau</li>
 <li> "Ya, itu dia!", atau</li>
@@ -19,14 +19,14 @@ Setiap bilangan (pertanyaan) yang kita coba tebak, memiliki <u>harga yang sama d
 
 <p>Jika <var>n</var>=3, cara terbaik yang dapat dilakukan adalah dengan menanyakan bilangan "<b>2</b>". Jawaban dari pertanyaan tersebut akan segera mengantarkan kita untuk menemukan bilangan tersembunyi (dengan total biaya = 2).</p>
 
-<p>Jika <var>n</var>=8, kita dapat memilih untuk menggunakan strategi "binary search": Pertanyaan pertama kita adalah bilangan "<b>4</b>" dan jika bilangan tersembunyi yang ada lebih besar dari 4 kita akan memerlukan dua pertanyaan tambahan.<br />
+<p>Jika <var>n</var>=8, kita dapat memilih untuk menggunakan strategi "pencarian biner": Pertanyaan pertama kita adalah bilangan "<b>4</b>" dan jika bilangan tersembunyi yang ada lebih besar dari 4 kita akan memerlukan dua pertanyaan tambahan.<br />
 Misalkan pertanyaan kedua kita adalah "<b>6</b>". Jika bilangan tersembunyi tersebut masih lebih besar dari 6, maka kita perlu pertanyaan ketiga untuk menentukan jawaban antara 7 dan 8.<br />
 Kemudian, pertanyaan ketiga kita adalah bilangan "<b>7</b>" dan total biaya untuk kasus terburuk seperti ini akan menjadi 4+6+7=<span style='color:red;'><b>17</b></span>.</p>
 
 <p>Kita dapat memperbaiki biaya yang diperlukan pada kasus terburuk untuk <var>n</var>=8, dengan menanyakan bilangan "<b>5</b>" sebagai pertanyaan pertama kita.<br />
 Jika kita diberitahu bahwa bilangan tersembunyi yang ada adalah lebih besar dari 5, pertanyaan kedua kita akan menjadi "<b>7</b>", kemudian kita akan mengetahui berapakah bilangan tersembunyi yang ada (dengan total biaya sebesar 5+7=<span style='color:blue;'><b>12</b></span>).<br />
 Jika kita diberitahu bahwa bilangan tersembunyi yang ada kurang dari 5, maka pertanyaan kedua kita akan menjadi "<b>3</b>" dan jika bilangan tersembunyi yang ada kurang dari 3, pertanyaan ketiga kita akan menjadi "<b>1</b>", dan didapatkan total biaya sebesar 5+3+1=<span style='color:blue;'><b>9</b></span>.<br />
-Sejak <span style='color:blue;'><b>12</b></span>><span style='color:blue;'><b>9</b></span>, biaya yang diperlukan untuk kasus terburuk mengguanakan strategi ini adalah <span style='color:red;'><b>12</b></span>. Hasil ini lebih baik dibandingkan dengan metode sebelumnya, yaitu dengan strategi "binary search"; strategi ini juga lebih baik atau sama dengan strategi lain yang ada.<br />
+Karena <span style='color:blue;'><b>12</b></span>><span style='color:blue;'><b>9</b></span>, biaya yang diperlukan untuk kasus terburuk menggunakan strategi ini adalah <span style='color:red;'><b>12</b></span>. Hasil ini lebih baik dibandingkan dengan metode sebelumnya, yaitu dengan strategi pencarian biner; strategi ini juga lebih baik atau sama dengan strategi lain yang ada.<br />
 Sehingga, pada kenyataannya, kita baru saja mendeskripsikan strategi optimal untuk <var>n</var>=8.</p>
 
 <p>Misal C(<var>n</var>) adalah biaya pada kasus terburuk yang diperoleh dengan strategi paling optimal untuk <var>n</var>, seperti yang dijelaskan di atas.<br />
