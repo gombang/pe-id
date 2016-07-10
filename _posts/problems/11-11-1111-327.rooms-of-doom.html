@@ -7,21 +7,21 @@ problemId: 327
 answer: -1
 ---
 
-<p>Tiga buah ruangan dihubungkan satu sama lain dengan pintu otomatis.</p>
+<p>Tiga ruangan dihubungkan satu sama lain dengan pintu otomatis.</p>
 
 <div align='center'><img src="{{ site.baseurl }}project/images/p327_rooms_of_doom.gif" /></div>
 
-<p>Setiap pintu dioperasikan dengan kartu keamanan. Sesaat setelah anda memasuki suatu ruangan, pintu akan secara otomatis tertutup, dan kartu keamanan tidak dapat digunakan lagi. Pada ruangan mulai (start), sebuah mesin akan mulai mengeluarkan banyak sekali kartu, namun setiap ruangan (termasuk ruangan start) memiliki alat pemindai, dan jika alat tersebut mendeteksi bahwa Anda memegang lebih dari tiga kartu keamanan, atau jika alat tersebut mendeteksi ada kartu keamanan yang tergeletak di lantai, maka semua pintu akan terkunci selamanya. Tetapi, setiap ruangan memiliki sebuah kotak yang dapat Anda gunakan untuk menyimpan kartu keamanan sebanyak apapun, yang dapat digunakan nanti.</p>
+<p>Setiap pintu dioperasikan dengan kartu keamanan. Sesaat setelah anda memasuki suatu ruangan, pintu akan otomatis tertutup, dan kartu keamanan tidak dapat digunakan lagi. Pada ruangan awal, sebuah mesin akan mulai mengeluarkan banyak sekali kartu, namun setiap ruangan (termasuk ruangan awal) memiliki alat pemindai, dan jika alat tersebut mendeteksi bahwa Anda memegang lebih dari tiga kartu keamanan, atau jika alat tersebut mendeteksi ada kartu keamanan yang tergeletak di lantai, maka semua pintu akan terkunci selamanya. Tetapi setiap ruangan memiliki sebuah kotak yang dapat Anda gunakan untuk menyimpan kartu keamanan sebanyak apapun, yang dapat digunakan nanti.</p>
 
 <p>Jika Anda mencoba memasuki ketiga ruangan langsung dalam sekali jalan, maka setelah Anda memasuki ruang ke 3, Anda telah menggunakan ketiga kartu di tangan Anda, dan Anda akan terjebak di ruangan tersebut selamanya!</p>
 
-<p>Tetapi, jika Anda menggunakan kotak penyimpanan yang ada, maka terdapat kemungkinan untuk meloloskan diri. Sebagai contoh, Anda dapat memasuki ruangan 1 menggunakan kartu pertama di tangan Anda, meletakkan satu buah kartu di kotak penyimpanan, dan menggunakan kartu ketiga untuk kembali ke ruangan mulai (start). Kemudain setelah mengambil tiga buah kartu lagi dari mesin kartu, Anda dapat menggunakan satu buah kartu untuk masuk ke ruangan 1, kemudian mengambil sebuah kartu di kotak penyimpanan beberapa saat yang lalu. Sekarang Anda memiliki tiga kartu lagi dan Anda dapat bergerak melalui tiga buah pintu yang tersisa. Metode ini memungkinkan Anda untuk dapat melalui ketiga ruangan menggunakan sebanyak 6 buah kartu.</p>
+<p>Tetapi jika Anda menggunakan kotak penyimpanan yang ada, maka terdapat kemungkinan untuk meloloskan diri. Sebagai contoh, Anda dapat memasuki ruangan 1 menggunakan kartu pertama di tangan Anda, meletakkan selembar kartu di kotak penyimpanan, dan menggunakan kartu ketiga untuk kembali ke ruangan awal. Kemudain setelah mengambil tiga lembar kartu lagi dari mesin kartu, Anda dapat menggunakan selembar kartu untuk masuk ke ruangan 1, kemudian mengambil selembar kartu di kotak penyimpanan beberapa saat yang lalu. Sekarang Anda memiliki tiga kartu lagi dan Anda dapat bergerak melalui tiga buah pintu yang tersisa. Metode ini memungkinkan Anda untuk dapat melalui ketiga ruangan menggunakan sebanyak 6 buah kartu.</p>
 
-<p>Adalah memungkinkan untuk melalui enam buah ruangan menggunakan 123 buah kartu keamanan dengan syarat hanya diperbolehkan membawa maksimal 3 buah kartu.</p>
+<p>Adalah memungkinkan untuk melalui enam buah ruangan menggunakan 123 buah kartu keamanan dengan syarat hanya diperbolehkan membawa maksimal 3 lembar kartu.</p>
 
-<p>Misal <var>C</var> adalah jumlah kartu maksimal yang boleh dibawa secara bersamaan.</p>
+<p>Misalkan <var>C</var> adalah jumlah kartu maksimal yang boleh dibawa secara bersamaan.</p>
 <p>Misal <var>R</var> adalah banyaknya ruangan yang ingin dilalui.</p>
-<p>Misal M(<var>C</var>,<var>R</var>) adalah jumlah minimal kartu yang dibutuhkan dari mesin untuk melalui ruangan dengan banyak <var>R</var> buah ruangan membawa maksimal <var>C</var> buah kartu sekaligus.</p>
+<p>Misal M(<var>C</var>,<var>R</var>) adalah jumlah minimal kartu yang dibutuhkan dari mesin untuk melalui ruangan dengan banyak <var>R</var> buah ruangan membawa maksimal <var>C</var> lembar kartu sekaligus.</p>
 
 <p>Sebagai contoh, M(3,6)=123 dan M(4,6)=23.<br>Dan, &Sigma;M(<var>C</var>,6)=146 untuk 3 &le; <var>C</var> &le; 4.</br></p>
 
