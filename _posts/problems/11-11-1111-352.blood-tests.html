@@ -8,12 +8,12 @@ answer: -1
 ---
 
 <p>
-Setiap satu dari 25 domba pada suatu kawanan harus di uji dari suatu virus langka, yang diketahui menginfeksi 2% dari populasi domba.
-Sebuah metode test PCR yang akurat dan sangat sensitif dapat dilakukan kepada sampel darah, yang dapat mengeluarkan hasil tes positif / negatif dengan jelas, namun proses ini sangat memakan waktu dan mahal.
+Setiap satu dari 25 ekor domba pada suatu kawanan harus diuji akan kehadiran suatu virus langka, yang diketahui menginfeksi 2% dari populasi domba.
+Sebuah metode uji PCR yang akurat dan sangat sensitif dapat dilakukan kepada sampel darah, yang dapat menghasilkan kesimpulan positif / negatif dengan jelas, namun proses ini sangat memakan waktu dan mahal.
 </p>
 
 <p>
-Karena harga yang tinggi, sang dokter hewan yang sedang bertugas menyarankan dibanding melakukan 25 tes terpisah, kita dapat menggunakan prosedur berikut:<br/><br/>
+Karena harga yang tinggi, sang dokter hewan yang sedang bertugas menyarankan daripada melakukan 25 tes terpisah, kita dapat menggunakan prosedur berikut:<br/><br/>
 Domba-domba dibagi menjadi 5 kelompok berisi 5 domba di setiap kelompok. 
 Untuk setiap kelompok, 5 sampel darah dicampur bersama, kemudian sebuah tes dilakukan. Kemudian,
 <ul>
@@ -23,7 +23,7 @@ Untuk setiap kelompok, 5 sampel darah dicampur bersama, kemudian sebuah tes dila
 </p>
 
 <p>
-Semenjak peluang seekor hewan terkena virus sangat spesifik, yaitu hanya 0.02, tes pertama (pada sampel darah yang dikumpulkan) pada setiap kelompoknya akan menjadi:
+Karena peluang seekor hewan terkena virus sangat spesifik, yaitu hanya 0.02, tes pertama (pada sampel darah yang dikumpulkan) pada setiap kelompoknya akan menjadi:
 <ul>
 <li>Negatif (dan tidak ada lagi tes yang perlu dilakukan) dengan peluang 0.98<sup>5</sup> = 0.9039207968.</li>
 <li>Positif (5 tes tambahan perlu dilakukan) dengan peluang 1 - 0.9039207968 = 0.0960792032.</li>
@@ -31,21 +31,21 @@ Semenjak peluang seekor hewan terkena virus sangat spesifik, yaitu hanya 0.02, t
 </p>
 
 <p>
-Sehingga, nilai perkiraan (expected number) dari hasil tes untuk setiap kelompok adalah 1 + 0.0960792032 &times; 5 = 1.480396016.<br/>
-Dampaknya, kelima kelompok dapat diperiksa menggunakan rata-rata hanya 1.480396016 &times; 5 = <b>7.40198008</b> kali tes, dimana hasil tersebut menggambarkan penghematan besar, yaitu lebih dari 70% !
+Sehingga, nilai harapan (expected number) dari hasil tes untuk setiap kelompok adalah 1 + 0.0960792032 &times; 5 = 1.480396016.<br/>
+Akibatnya kelima kelompok dapat diperiksa menggunakan rata-rata hanya 1.480396016 &times; 5 = <b>7.40198008</b> kali uji, yang merupakan penghematan besar, yaitu lebih dari 70% !
 </p>
 
 <p>
-Walaupun metode yang baru saja dijelaskan terlihat sangat efisien, metode tersebut masih bisa sangat disempurnakan (selalu asumsikan bahwa hasil test cukup sensitif, dan tidak ada efek merugikan yang dihasilkan oleh pencampuran sampel darah). Sebagai contoh:
+Walaupun metode yang baru saja dijelaskan terlihat sangat efisien, metode tersebut masih bisa ditingkatkan jauh lebih baik lagi (selalu asumsikan bahwa hasil uji cukup sensitif, dan tidak ada efek merugikan yang dihasilkan oleh pencampuran sampel darah). Sebagai contoh:
 <ul>
 <li>Kita dapat memulai dengan mencampurkan ke-25 sampel darah dan melakukan tes pada campuran tersebut. Dapat dibuktikan bahwa terdapat sekitar 60.35% kemungkinan tes ini akan mengeluarkan hasil negatif, sehingga tidak perlu lagi ada tes dibutuhkan. Tes selanjutnya hanya diperlukan oleh 39.65% kemungkinan lainnya.</li>
 <li>Jika kita mengetahui informasi setidaknya satu ekor hewan dalam setiap kelompok berisi 5 ekor hewan terinfeksi, dan hasil tes 4 ekor hewan pertama mengeluarkan hasil negatif, kita tidak lagi perlu melakukan tes untuk hewan ke lima (kita tahu bahwa hewan tersebut pasti terinfeksi).</li>
-<li>Kita dapat mencoba mengelompokkan domba dengan banyak kelompok yang berbeda / banyak hewan yang berbeda di setiap kelompoknya, menyesuaikan angka-angka tersebut pada setiap level tes sehingga jumlah nilai perkiraan percobaan (expected number) dari tes akan berkurang.</li>
+<li>Kita dapat mencoba mengelompokkan domba dengan banyak kelompok yang berbeda / banyak hewan yang berbeda di setiap kelompoknya, menyesuaikan angka-angka tersebut pada setiap level uji sehingga jumlah nilai harapan percobaan (expected number) dari uji akan berkurang.</li>
 </ul>
 <P>
-Untuk menyederhanakan berbagai macam kemungkinan yang ada, terdapat satu syarat yang harus kita ikuti saat menentukan skema tes yang paling efisien: Saat kita memulai dengan sampel darah campuran, semua domba yang darahnya ikut masuk dalam sampel tersebut harus sepenuhnya diperiksa (sehingga kesimpulan terinfeksi / bebas virus harus dimiliki oleh semua domba) sebelum kita meneliti hewan lainnya.
+Untuk menyederhanakan berbagai macam kemungkinan yang ada, terdapat satu syarat yang harus kita ikuti saat menentukan skema uji yang paling efisien: Saat kita memulai dengan sampel darah campuran, semua domba yang darahnya ikut masuk dalam sampel tersebut harus sepenuhnya diperiksa (sehingga kesimpulan terinfeksi / bebas virus harus dimiliki oleh semua domba) sebelum kita meneliti hewan lainnya.
 </P>
-Untuk contoh ini, terlihat bahwa skema tes yang biayanya paling efisien (kita akan menyebut ini sebagai <i>strategi optimal</i>) membutuhkan rata-rata hanya <b>4.155452</b> kali tes!
+Untuk contoh ini, terlihat bahwa skema uji yang biayanya paling efisien (kita akan menyebut ini sebagai <i>strategi optimal</i>) membutuhkan rata-rata hanya <b>4.155452</b> kali uji!
 </p>
 
 <p>
