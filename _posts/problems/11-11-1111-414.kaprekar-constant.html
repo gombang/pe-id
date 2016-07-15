@@ -9,20 +9,20 @@ answer: -1
 
 <P>
 6174 adalah sebuah bilangan yang luar biasa; jika kita menyusun digit-digitnya dengan urutan menaik dan menggunakan bilangan tersebut untuk mengurangkan bilangan yang telah diurutkan secara menurun, kita dapatkan 7641-1467=6174.<BR />
-Lebih luar biasanya lagi adalah, jika kita melakukan hal yang sama dengan bilangan 4 digit apapun, dan mengulang proses mengurutkan dan mengurangkan ini, suatu saat hasil perhitungan kita akan berakhir di 6174 atau langsung menjadi 0 jika semua digit adalah sama.<BR /> 
+Lebih luar biasanya lagi adalah, jika kita melakukan hal yang sama dengan bilangan 4 digit apapun, dan mengulangi proses mengurutkan dan mengurangkan ini, suatu saat hasil perhitungan kita akan berakhir di 6174 atau langsung menjadi 0 jika semua digit adalah sama.<BR /> 
 Ini juga berlaku dengan bilangan yang memiliki kurang dari 4 digit, jika kita mengisi bilangan tersebut dengan angka nol di depannya sampai kita memiliki bilangan 4 digit.<BR />
 Sebagai contoh, mari kita mulai dengan bilangan 0837:<BR />
 8730-0378=8352<BR />
 8532-2358=6174
 </P>
 <P>
-6174 disebut sebagai <b>konstanta Kaprekar</b>. Proses untuk mengurutkan dan mengurangkan dan mengulang-ulang proses ini sampai didapat hasil antara 0 atau konstanta Kaprekar disebut sebagai <b>kebiasaan Kaprekar</b>.
+6174 disebut sebagai <b>konstanta Kaprekar</b>. Proses untuk mengurutkan dan mengurangkan dan mengulang-ulang proses ini sampai didapatkan hasil antara 0 atau konstanta Kaprekar disebut sebagai <b>rutin Kaprekar</b>.
 </P>
 <P>
-Kita dapat mengamati kebiasaan Kaprekar untuk bilangan dengan basis dan banyak digit lain.<BR /> 
+Kita dapat mengamati rutin Kaprekar untuk bilangan dengan basis lain dan banyak digit berbeda.<BR /> 
 Sayangnya, tidak dapat dijamin bahwa konstanta Kaprekar akan selalu ada dalam setiap kasus; proses ini dapat berakhir pada sebuah siklus untuk beberapa bilangan, atau dapat berakhir dengan bilangan konstan pada beberapa bilangan lainnya.<BR >
-Tetapi, dapat ditunjukkan bahwa untuk bilangan 5 digit yang dituliskan dalam basis b = 6t+3&ne;9, terdapat sebuah konstanta Kaprekar.<BR />
-Sebagai contoh, basis 15: (10,4,14,9,5)<sub>15</sub><BR />
+Tetapi dapat ditunjukkan bahwa untuk bilangan 5 digit yang dituliskan dalam basis b = 6t+3&ne;9, terdapat sebuah konstanta Kaprekar.<BR />
+Sebagai contoh, untuk basis 15: (10,4,14,9,5)<sub>15</sub><BR />
 Basis 21: (14,6,20,13,7)<sub>21</sub>
 </P>
 <P>
@@ -30,9 +30,9 @@ Dinyatakan <var>C<sub>b</sub></var> sebagai konstanta Kaprekar pada basis <var>b
 Dinyatakan fungsi <var>sb(i)</var> sebagai
 <ul> 
 <li> 0 jika i = <var>C<sub>b</sub></var> atau jika <var>i</var> tertulis dalam basis <var>b</var> yang dibentuk dari 5 digit yang sama
-<li> Selain itu, <var>sb(i)</var> dinyatakan sebagai banyaknya iterasi yang diperlukan untuk melakukan kebiasaan Kaprekar pada bilangan basis <var>b</var> untuk sampai pada <var>C<sub>b</sub></var>
+<li> Selain itu, <var>sb(i)</var> dinyatakan sebagai banyaknya iterasi yang diperlukan untuk melakukan rutin Kaprekar pada bilangan basis <var>b</var> untuk sampai pada <var>C<sub>b</sub></var>
 </ul>
-Perlu diingat bahwa kita dapat menyatakan <var>sb(i)</var> untuk semua bilangan bulat <var>i</var> &lt; <var>b</var><sup>5</sup>. Jika <var>i</var> tertulis dalam basis <var>b</var>, maka akan diperlukan kurang dari 5 digit, bilangan akan diisi oleh angka nol pada bagian depannya sampai kita dapatkan bilangan 5 digit sebelum kita menerapkan kebiasaan Kaprekar.
+Perlu diingat bahwa kita dapat menyatakan <var>sb(i)</var> untuk semua bilangan bulat <var>i</var> &lt; <var>b</var><sup>5</sup>. Jika <var>i</var> tertulis dalam basis <var>b</var>, maka akan diperlukan kurang dari 5 digit, bilangan akan diisi oleh angka nol pada bagian depannya sampai kita dapatkan bilangan 5 digit sebelum kita menerapkan rutin Kaprekar.
 </P>
 <P>
 Dinyatakan <var>S(b)</var> sebagai hasil penjumlahan dari <var>sb(i)</var> untuk 0 &lt; <var>i</var> &lt; <var>b</var><sup>5</sup>.<BR >
