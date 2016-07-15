@@ -9,9 +9,9 @@ answer: -1
 
 <div style="text-align:center;"><img src="{{ site.baseurl }}project/images/p424_kakuro1.gif"></div>
 
-<p>Gambar di atas adalah sebuah contoh dari teka-teki kakuro rahasia (juga dikenal sebagai penjumlahan menyilang, atau penyilangan jumlah genap), dengan solusi akhirnya ada di sebelah kanan. (Aturan yang biasa digunakan pada teka-teki kakuro dapat dengan mudah ditemukan di banyak situs internet. Informasi lainnya yang berhubungan saat ini juga dapat ditemukan di <a href="http://krazydad.com/" target="_blank">krazydad.com</a> dimana penulisnya telah memberikan data teka-teki untuk tantangan ini.)</p>
+<p>Gambar di atas adalah sebuah contoh dari teka-teki kakuro rahasia (juga dikenal sebagai penjumlahan menyilang, atau penyilangan jumlah genap), dengan solusi akhirnya ada di sebelah kanan. (Aturan yang biasa digunakan pada teka-teki kakuro dapat dengan mudah ditemukan pada banyak situs internet. Informasi lainnya yang berhubungan saat ini juga dapat ditemukan di <a href="http://krazydad.com/" target="_blank">krazydad.com</a> tempat penulisnya memberikan data teka-teki untuk tantangan ini.)</p>
 
-<p>Sebuah text file yang dapat di download (<a href="{{ site.baseurl }}project/resources/p424_kakuro200.txt">kakuro200.txt</a>) berisi deskripsi dari 200 teka-teki seperti ini, gabungan dari tipe 5x5 dan 6x6. Teka-teki pertama pada file ini adalah contoh di atas, yang dituliskan sebagai berikut:</p>
+<p>Sebuah berkas teks yang dapat diunduh (<a href="{{ site.baseurl }}project/resources/p424_kakuro200.txt">kakuro200.txt</a>) berisi deskripsi dari 200 teka-teki seperti ini, gabungan dari tipe 5x5 dan 6x6. Teka-teki pertama pada berkas tersebut adalah contoh di atas, yang dituliskan sebagai berikut:</p>
 
 <p>6,X,X,(vCC),(vI),X,X,X,(hH),B,O,(vCA),(vJE),X,(hFE,vD),O,O,O,O,(hA),O,I,(hJC,vB),O,O,(hJC),H,O,O,O,X,X,X,(hJE),O,O,X</p>
 
@@ -20,13 +20,13 @@ answer: -1
 <p>Isi dari setiap sel kemudian dijelaskan dan diikuti oleh tanda koma, dari kiri ke kanan dan dimulai dari baris atas.<br />
 X = Sel abu-abu, tidak perlu diisi oleh digit.<br />
 O (huruf kapital)= Sel putih kosong yang akan diisi oleh digit.<br />
-A = Atau sel lain yang terdapat huruf kapital dari A sampai J harus diganti dengan digit yang ekuivalen untuk mendapatkan jawaban teka-teki.<br />
-( ) = Lokasi dari hasil penjumlahan rahasia. Penjumlahan horizontal di diawali dengan huruf "h" kecil, dan penjumlahan vertikal diawali dengan huruf "v" kecil. Kemudian huruf tersebut diikuti oleh satu atau dua huruf kapital tergantuk dari hasil penjumlahannya, apakah satu digit atau dua gitig. Untuk hasil penjumlahan dua digit, huruf pertama merupakan "puluhan" dan huruf kedua merupakan "satuan". Saat sel harus berisi informasi baik untuk penjumlahan horizontal maupun vertikal, maka bagian yang pertama selalu merupakan penjumlahan untuk horizontal, dan keduanya dipisahkan dengan sebuah tanda koma di dalam kurung yang sama, contoh: (hFE,vD). Setiap set tanda kurung juga langsung diikuti oleh tanda koma.</p>
+A = Atau sel lain yang terdapat huruf kapital dari A sampai J harus diganti dengan digit yang ekivalen untuk mendapatkan jawaban teka-teki.<br />
+( ) = Lokasi dari hasil penjumlahan rahasia. Penjumlahan horizontal di diawali dengan huruf "h" kecil, dan penjumlahan vertikal diawali dengan huruf "v" kecil. Kemudian huruf tersebut diikuti oleh satu atau dua huruf kapital tergantung dari hasil penjumlahannya, apakah satu digit atau dua digit. Untuk hasil penjumlahan dua digit, huruf pertama merupakan "puluhan" dan huruf kedua merupakan "satuan". Saat sel harus berisi informasi baik untuk penjumlahan horizontal maupun vertikal, maka bagian yang pertama selalu merupakan penjumlahan untuk horizontal, dan keduanya dipisahkan dengan sebuah tanda koma di dalam kurung yang sama, contoh: (hFE,vD). Setiap set tanda kurung juga langsung diikuti oleh tanda koma.</p>
 
 <p>Deskripsi dari sel terakhir tidak diikuti oleh tanda koma, melainkan akan diikuti oleh <i>Carriage Return/Line Feed</i> (CRLF).</p>
 
 <p>Jawaban yang diperlukan untuk setiap teka-teki didasarkan pada nilai dari setiap huruf yang diperlukan untuk sampai kepada solusi, dan bedasarkan urutan abjad. Seperti yang ditunjukkan pada contoh teka-teki, jawabannya adalah 8426039571. Setidaknya 9 dari 10 huruf rahasia akan selalu menjadi bagian dari deskripsi masalah. Saat hanya 9 yang diberikan, satu yang masih belum ditemukan harus diberikan digit yang masih tersisa.</p>
 
-<p>Anda diberikan informasi bahwa hasil penjumlahan dari jawaban untuk 10 teka-teki pertama pada file adalah 64414157580.</p>
+<p>Anda diberikan informasi bahwa hasil penjumlahan dari jawaban untuk 10 teka-teki pertama pada berkas adalah 64414157580.</p>
 
 <p>Carilah hasil penjumlahan untuk ke 200 buah teka-teki.</p>
