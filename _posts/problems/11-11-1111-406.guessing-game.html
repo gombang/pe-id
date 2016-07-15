@@ -15,7 +15,7 @@ Setiap bilangan (pertanyaan) yang kita tanyakan, akan memiliki satu dari tiga ke
 <li> "Ya, itu jawabannya!" (dan permainan berakhir).</li>
 </ul></p>
 
-<p>Diberikan nilai dari <var>n</var>, <var>a</var>, dan <var>b</var>, sebagai sebuah <i>strategi optimal</i> sehingga dapat meminimalisir total biaya <u>untuk kasus terburuk</u>.</p>
+<p>Diberikan nilai dari <var>n</var>, <var>a</var>, dan <var>b</var>, sebagai sebuah <i>strategi optimal</i> sehingga dapat meminimalkan total biaya <u>untuk kasus terburuk</u>.</p>
 
 <p>Sebagai contoh, jika <var>n</var> = 5, <var>a</var> = 2, dan <var>b</var> = 3, maka kita dapat memulai dengan menanyakan "<b>2</b>" sebagai pertanyaan pertama kita.</p>
 
@@ -23,10 +23,10 @@ Setiap bilangan (pertanyaan) yang kita tanyakan, akan memiliki satu dari tiga ke
 Jika kita diberi tahu bahwa 2 lebih rendah dari bilangan tersembunyi (dengan biaya sebesar <var>a</var>=2), maka pertanyaan kita selanjutnya akan menjadi "<b>4</b>".<br />
 Jika kita diberi tahu bahwa 4 lebih tinggi dari bilangan tersembunyi (dengan biaya sebesar <var>b</var>=3), maka dapat dipastikan oleh kita bahwa "<b>3</b>" adalah bilangan tersembunyi (untuk total biaya sebesar 2+3=<span style='color:blue;'><b>5</b></span>).<br />
 Jika kita diberi tahu bahwa 4 lebih rendah dari bilangan tersembunyi (dengan biaya sebesar <var>a</var>=2), maka dapat dipastikan oleh kita bahwa "<b>5</b>" adalah bilangan tersembunyi (untuk total biaya sebesar 2+2=<span style='color:blue;'><b>4</b></span>).<br />
-Sehingga, pada kasus terburuk, biayayang dikeluarkan oleh strategi ini adalah <span style='color:red;'><b>5</b></span>. Dan dapat dibuktikan bahwa ini merupakan kasus terburuk dengan biaya terkecil yang bisa didapatkan. 
-Bahkan, pada kenyataannya, kita baru saja menjelaskan sebuah strategi optimal untuk nilai <var>n</var>, <var>a</var>, dan <var>b</var>.</p>
+Sehingga, pada kasus terburuk, biaya yang dikeluarkan oleh strategi ini adalah <span style='color:red;'><b>5</b></span>. Dan dapat dibuktikan bahwa ini merupakan kasus terburuk dengan biaya terkecil yang bisa didapatkan. 
+Sebenarnya kita baru saja menjelaskan sebuah strategi optimal untuk nilai <var>n</var>, <var>a</var>, dan <var>b</var>.</p>
 
-<p>Misal C(<var>n</var>, <var>a</var>, <var>b</var>) adalah biaya yang didapatkan pada kasus terburuk, oleh sebuah strategi optimal jika diberikan nilai <var>n</var>, <var>a</var>, and <var>b</var>.</p>
+<p>Misalkan C(<var>n</var>, <var>a</var>, <var>b</var>) adalah biaya yang didapatkan pada kasus terburuk, oleh sebuah strategi optimal jika diberikan nilai <var>n</var>, <var>a</var>, dan <var>b</var>.</p>
 
 <p>Berikut ini adalah beberapa contohnya:<br />
 C(5, 2, 3) = 5<br />
@@ -34,4 +34,4 @@ C(500, &radic;2, &radic;3) = 13.22073197...<br />
 C(20000, 5, 7) = 82<br />
 C(2000000, &radic;5, &radic;7) = 49.63755955...</p>
 
-<p>Misal F<sub><var>k</var></sub> adalah bilangan Fibonacci: F<sub><var>k</var></sub> = F<sub><var>k</var>-1</sub> + F<sub><var>k</var>-2</sub> dengan F<sub>1</sub> = F<sub>2</sub> = 1.<br />Carilah &sum;<sub>1&le;<var>k</var>&le;30</sub>&nbsp;C(10<sup>12</sup>, &radic;<var>k</var>, &radic;F<sub><var>k</var></sub>), dan berikan jawaban Anda dibulatkan hingga 8 angka di belakang koma.</p>
+<p>Misalkan F<sub><var>k</var></sub> adalah bilangan Fibonacci: F<sub><var>k</var></sub> = F<sub><var>k</var>-1</sub> + F<sub><var>k</var>-2</sub> dengan F<sub>1</sub> = F<sub>2</sub> = 1.<br />Carilah &sum;<sub>1&le;<var>k</var>&le;30</sub>&nbsp;C(10<sup>12</sup>, &radic;<var>k</var>, &radic;F<sub><var>k</var></sub>), dan berikan jawaban Anda dibulatkan hingga 8 angka di belakang koma.</p>
