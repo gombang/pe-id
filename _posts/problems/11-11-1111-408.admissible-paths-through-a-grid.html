@@ -2,18 +2,18 @@
 layout: problem
 category: problems
 difficulty: 45
-title: "Jalur Yang Bisa Diterima Melalui Sebuah Kisi"
+title: "Jalur Yang Bisa Diterima di Dalam Sebuah Kisi"
 problemId: 408
 answer: -1
 ---
 
-<p>Mari kita sebut titik koordinat bilangan bulat (<var>x</var>, <var>y</var>) sebagai <i>tidak bisa diterima</i> jika <var>x</var>, <var>y</var> dan <var>x</var>&nbsp;+&nbsp;<var>y</var> semuanya adalah bilangan bulat kuadrat.<br />
-Sebagai contoh, (9, 16) adalah tidak bisa diterima, dimana (0, 4), (3, 1) dan (9, 4) adalah bukan.</p>
+<p>Mari kita sebut titik koordinat bilangan bulat (<var>x</var>, <var>y</var>) sebagai <i>tidak bisa diterima</i> jika <var>x</var>, <var>y</var> dan <var>x</var>&nbsp;+&nbsp;<var>y</var> semuanya adalah kuadrat bilangan bulat.<br />
+Sebagai contoh, (9, 16) adalah termasuk tidak bisa diterima, sementara (0, 4), (3, 1) dan (9, 4) tidak termasuk.</p>
 
 <p>Perhatikan jalur yang dibentuk dari titik (<var>x</var><sub>1</sub>, <var>y</var><sub>1</sub>) ke titik (<var>x</var><sub>2</sub>, <var>y</var><sub>2</sub>) hanya menggunakan satu langkah ke utara atau timur.<br />
 Mari kita sebut jalur seperti ini sebagai jalur yang <i>dapat diterima</i> jika tidak terdapat titik di ataranya yang tidak bisa diterima.</p>
 
-<p>Misal P(<var>n</var>) adalah banyaknya jalur yang dapat diterima dari (0, 0) ke (<var>n</var>, <var>n</var>).<br />
+<p>Misalkan P(<var>n</var>) adalah banyaknya jalur yang dapat diterima dari (0, 0) ke (<var>n</var>, <var>n</var>).<br />
 Dapat dibuktikan bahwa P(5) = 252, P(16) = 596994440 dan P(1000) mod 1&nbsp;000&nbsp;000&nbsp;007 = 341920854.</p>
 
 <p>Carilah P(10&nbsp;000&nbsp;000) mod 1&nbsp;000&nbsp;000&nbsp;007.</p>
