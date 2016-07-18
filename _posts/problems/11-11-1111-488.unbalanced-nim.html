@@ -7,15 +7,15 @@ problemId: 488
 answer: -1
 ---
 
-<p>Alice dan Bob menikmati bermain <b>Nim</b> setiap hari. Tetapi, mereka akhirnya merasa bosan untuk memainkan permainan Nim tiga tumpuk biasa.<br>
-Sehingga, mereka membuat peraturan tambahan:</p>
+<p>Alice dan Bob gemar bermain <b>Nim</b> setiap hari. Tetapi mereka akhirnya bosan memainkan permainan Nim tiga tumpuk biasa.<br>
+Akhirnya mereka membuat peraturan tambahan:</p>
 
 <p>- Tidak boleh terdapat dua tumpukan yang memiliki jumlah batu yang sama.</p>
 
 <p>Tripel bilangan (<var>a</var>,<var>b</var>,<var>c</var>) menandakan banyaknya batu di masing-masing tumpukan.<br>
 Dengan tambahan aturan ini, (2,4,5) akan menjadi posisi kalah untuk pemain selanjutnya.</p>
 
-<p>Untuk menggambarkan:<br>
+<p>Sebagai gambaran:<br>
 - Alice mengambil batu menjadi (2,4,3)<br>
 - Bob   mengambil batu menjadi (0,4,3)<br>
 - Alice mengambil batu menjadi (0,2,3)<br>
@@ -23,7 +23,7 @@ Dengan tambahan aturan ini, (2,4,5) akan menjadi posisi kalah untuk pemain selan
 
 <p>Tidak seperti Nim tiga tumpuk biasa, (0,1,2) dan permutasinya adalah posisi batu akhir dari permainan ini.</p>
 
-<p>Untuk sebuah bilangan bulat <var>N</var>, kita nyatakan F(<var>N</var>) sebagai hasil penjumlahan dari <var>a</var>+<var>b</var>+<var>c</var> untuk semua posisi kalah untuk pemain selanjutnyafor all the losing positions for the next player, dengan 0 < <var>a</var> < <var>b</var> < <var>c</var> < <var>N</var>.</p>
+<p>Untuk sebuah bilangan bulat <var>N</var>, kita nyatakan F(<var>N</var>) sebagai hasil penjumlahan dari <var>a</var>+<var>b</var>+<var>c</var> untuk semua posisi kalah untuk pemain selanjutnya, dengan 0 < <var>a</var> < <var>b</var> < <var>c</var> < <var>N</var>.</p>
 
 <p>Sebagai contoh, F(8) = 42, karena terdapat 4 buah posisi kalah untuk pemain selanjutnya, (1,3,5), (1,4,6), (2,3,6) dan (2,4,5).<br>
 Kita juga dapat membuktikan bahwa F(128) = 496062.</p>
