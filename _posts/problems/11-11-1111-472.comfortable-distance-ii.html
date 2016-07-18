@@ -7,24 +7,24 @@ problemId: 472
 answer: -1
 ---
 
-<p>Terdapat <var>N</var> buah bangku pada suatu baris. <var>N</var> orang datang satu per satu untuk menempati bangku dengan aturan berikut:
+<p>Terdapat <var>N</var> kursi pada suatu baris. <var>N</var> orang datang satu per satu untuk menempati kursi dengan aturan berikut:
 <ol>
 <li>Tidak ada orang yang duduk bersebelahan.</li>
-<li>Orang pertama dapat duduk di bangku manapun.</li>
-<li>Orang berikutnya memilih bangku yang memiliki jarak paling jauh dari orang lain yang telah duduk, sepanjang tidak melanggar aturan ke 1. Jika terdapat lebih dari satu bangku yang memenuhi sifat ini, maka orang tersebut akan memilih bangku yang paling kiri dari pilihan bangku-bangku yang memenuhi sifat ini.</li>
+<li>Orang pertama dapat duduk di kursi manapun.</li>
+<li>Orang berikutnya memilih kursi yang memiliki jarak paling jauh dari orang lain yang telah duduk, sepanjang tidak melanggar aturan pertama. Jika terdapat lebih dari satu kursi yang memenuhi sifat ini, maka orang tersebut akan memilih kursi yang paling kiri dari pilihan kursi yang memenuhi sifat ini.</li>
 </ol>
 </p>
 
-<p>Perlu diingat bahwa karena adanya aturan ke 1, beberapa bangku dipastikan akan kosong, dan banyak maksimum orang yang akan duduk adalah kurang dari <var>N</var> (untuk <var>N</var> > 1).</p>
+<p>Perlu diingat bahwa karena adanya aturan pertama, beberapa kursi dipastikan akan kosong, dan banyak maksimum orang yang akan duduk adalah kurang dari <var>N</var> (untuk <var>N</var> > 1).</p>
 
 <p>Ini adalah contoh penempatan yang mungkin untuk <var>N</var> = 15:
 <p align=center><img src={{ site.baseurl }}project/images/p472_n15.png></p>
 </p>
 
-<p>Dapat kita lihat bahwa apabila orang pertama memilih bangku yang benar, maka 15 bangku tersebut dapat memuat hingga 7 orang.<br/>
+<p>Dapat kita lihat bahwa apabila orang pertama memilih kursi yang benar, maka 15 kursi tersebut dapat memuat hingga 7 orang.<br/>
 Kita juga dapat melihat bahwa orang pertama memiliki 9 pilihan agar terdapat sebanyak mungkin jumlah orang yang dapat duduk.</p>
 
-<p>Misal f(N) adalah banyaknya pilihan bangku yang dapat dipilih oleh orang pertama agar terdapat sebanyak mungkin jumlah orang yang dapat duduk pada barisan bangku berisi <var>N</var>-buah kursi. Sehingga, f(1)&nbsp;=&nbsp;1, f(15)&nbsp;=&nbsp;9, f(20)&nbsp;=&nbsp;6, dan f(500)&nbsp;=&nbsp;16.</p>
+<p>Misalkan f(N) adalah banyaknya pilihan kursi yang dapat dipilih oleh orang pertama agar terdapat sebanyak mungkin jumlah orang yang dapat duduk pada barisan kursi berisi <var>N</var> kursi. Jadi f(1)&nbsp;=&nbsp;1, f(15)&nbsp;=&nbsp;9, f(20)&nbsp;=&nbsp;6, dan f(500)&nbsp;=&nbsp;16.</p>
 
 <p>Juga, &sum;f(N) = 83 untuk 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;20 dan  &sum;f(N) = 13343 untuk 1&nbsp;&le;&nbsp;<var>N</var>&nbsp;&le;&nbsp;500.</p>
 
