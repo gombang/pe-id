@@ -12,14 +12,14 @@ Barisan Collatz dinyatakan sebagai:
 $a_{i+1} = \left\{  \large{\frac {a_i} 2 \atop 3 a_i+1} {\text{jika }a_i\text{ adalah genap} \atop \text{jika }a_i\text{ adalah ganjil}} \right.$.
 </P>
 <P>
-Collatz menduga bahwa dimulai dari bilangan bulat positif apapun, barisan akan mencapai siklus 1,4,2,1....<BR />
-Kita akan menyatakan awalan (prefix) barisan <var>p(n)</var> untuk barisan Collatz, yang dimulai dengan <var>a<sub>1</sub> = n</var> sebagai sub barisan dari semua bilangan yang bukan merupakan hasil 2 pangkat suatu bilangan (2<sup>0</sup>=1 juga dianggap hasil 2 pangkat suatu bilangan, untuk soal ini). Sebagai contoh:<BR />
+Collatz menduga bahwa dimulai dari bilangan bulat positif apapun, barisan pada akhirnya akan mencapai siklus 1,4,2,1....<BR />
+Kita akan menyatakan awalan (prefix) barisan <var>p(n)</var> untuk barisan Collatz, yang dimulai dengan <var>a<sub>1</sub> = n</var> sebagai subbarisan dari semua bilangan yang bukan merupakan hasil 2 pangkat suatu bilangan (2<sup>0</sup>=1 juga dianggap hasil 2 pangkat suatu bilangan, untuk soal ini). Sebagai contoh:<BR />
 <var>p</var>(13) = {13, 40, 20, 10, 5} <BR/>
 <var>p</var>(8) = {}<BR />
-Setiap bilangan yang tidak sesuai dengan dugaan akan mempunyai panjang awalan barisan tak terhingga.
+Bilangan yang tidak memenuhi dugaan ini akan mempunyai awalan berupa barisan yang panjangnya tak terhingga.
 </P>
 <P>
-Misal <var>S<sub>m</sub></var> adalah himpunan semua awalan barisan dengan panjang <var>m</var>. Dua barisan {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub><var>m</var></sub>}</var> dan {b<sub>1</sub>, b<sub>2</sub>, ..., b<sub><var>m</var></sub>} pada <var>S<sub>m</sub></var> dikatakan mempunyai keluarga awalan yang sama apabila a<sub>i</sub> < a<sub>j</sub> jika dan hanya jika b<sub>i</sub> < b<sub>j</sub> untuk semua 1 &le; i,j &le;<var> m</var>.
+Misalkan <var>S<sub>m</sub></var> adalah himpunan semua awalan barisan dengan panjang <var>m</var>. Dua barisan {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub><var>m</var></sub>}</var> dan {b<sub>1</sub>, b<sub>2</sub>, ..., b<sub><var>m</var></sub>} pada <var>S<sub>m</sub></var> dikatakan termasuk dalam keluarga awalan yang sama apabila a<sub>i</sub> < a<sub>j</sub> jika dan hanya jika b<sub>i</sub> < b<sub>j</sub> untuk semua 1 &le; i,j &le;<var> m</var>.
 </P>
 <P>
 Sebagai contoh, pada <var>S</var><sub>4</sub>, {6, 3, 10, 5} adalah keluarga yang sama dengan {454, 227, 682, 341}, tetapi tidak dengan {113, 340, 170, 85}.<BR />
