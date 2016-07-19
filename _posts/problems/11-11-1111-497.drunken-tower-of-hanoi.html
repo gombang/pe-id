@@ -7,25 +7,25 @@ problemId: 497
 answer: -1
 ---
 
-<p>Bob sangat akrab dengan sebuah teka-teki/puzzle matematika, yaitu "Menara Hanoi," yang berisi tiga buah tiang yang tegak ke atas dan disk-disk beragam ukuran yang dapat dimasukkan ke tiang-tiang tersebut. Permainan dimulai dengan tumpukan <var>n</var> buah disk yang diletakkan pada tiang paling kiri secara berurutan bedasarkan ukurannya, dengan disk yang paling kecil berada di paling atas. Sasaran dari permainan ini adalah untuk memindahkan semua disk dari tiang yang paling kiri ke tiang yang paling kanan, namun dengan mematuhi aturan-aturan berikut:</p>
+<p>Bob sangat akrab dengan sebuah teka-teki matematika, yaitu "Menara Hanoi,". Pada teka-teki ini kita memiliki tiga batang tiang yang tegak ke atas dan cakram-cakram beragam ukuran yang dapat dimasukkan ke tiang-tiang tersebut. Permainan dimulai dengan tumpukan <var>n</var> cakram yang diletakkan pada tiang paling kiri secara berurutan berdasarkan ukurannya, dengan cakram yang paling kecil berada di paling atas. Sasaran dari permainan ini adalah untuk memindahkan semua cakram dari tiang yang paling kiri ke tiang yang paling kanan, namun dengan mematuhi aturan-aturan berikut:</p>
 
 <ol>
-<li>Hanya satu buah disk yang bisa dipindahkan pada satu waktu.</li>
-<li>Gerakan yang sah adalah mengambil disk yang ada di paling atas dari salah satu tumpukan, dan meletakknya ke tumpukan lain (atau tiang yang masih kosong).</li>
-<li>Tidak ada disk yang bisa diletakkan di atas disk yang berukuran lebih kecil darinya.</li>
+<li>Hanya satu buah cakram yang bisa dipindahkan pada satu waktu.</li>
+<li>Gerakan yang sah adalah mengambil cakram yang ada di paling atas dari salah satu tumpukan, dan meletakkannya ke tumpukan lain (atau tiang yang masih kosong).</li>
+<li>Tidak ada cakram yang bisa diletakkan di atas cakram yang berukuran lebih kecil darinya.</li>
 </ol>
 
-<p>Berlanjut ke variasi dari permainan ini, terdapat sebuah ruangan sepanjang <var>k</var> satuan (seukuran ubin), yang diberi nomor dari 1 sampai <var>k</var> pada urutan menaik. Tiga buah tiang diletakkan pada persegi <var>a</var>, <var>b</var>, dan <var>c</var>, dan sebuah tumpukan berisi <var>n</var> buah disk diletakkan pada tiang di persegi <var>a</var>.</p>
+<p>Perhatikan  variasi dari permainan ini: terdapat sebuah ruangan sepanjang <var>k</var> satuan (seukuran ubin), yang diberi nomor dari 1 sampai <var>k</var> pada urutan menaik. Tiga batang tiang diletakkan pada persegi <var>a</var>, <var>b</var>, dan <var>c</var>, dan sebuah tumpukan berisi <var>n</var> cakram diletakkan pada tiang di persegi <var>a</var>.</p>
 
-<p>Bob memulai permainan pada persegi <var>b</var>. Sasarannya adalah untuk memainkan permainan Menara Hanoi, dengan memindahkan semua disk menuju ke tiang di persegi <var>c</var>. Tetapi, Bob hanya dapat mengambil atau meletakkan sebuah disk, jika ia menempati persegi yang sama dengan tiang, yang daripadanya disk tersebut ingin diambil.</p>
+<p>Bob memulai permainan pada persegi <var>b</var>. Sasarannya adalah untuk memainkan permainan Menara Hanoi, dengan memindahkan semua cakram menuju ke tiang di persegi <var>c</var>. Tetapi, Bob hanya dapat mengambil atau meletakkan sebuah cakram bila dia sedang menempati persegi yang sama dengan tiang atau tumpukan tersebut.</p>
 
-<p>Sayangnya, Bob juga sedang mabuk. Pada beberapa langkah, Bob dapat saja menabrak salah satu persegi di kiri atau di kanannya dengan peluang yang sama, kecuali Bob sedang perada di pojok ruangan, pada kasus ini ia hanya dapat bergerak ke satu arah. Walaupun Bob sedang berada dalam kondisi mabuk, ia masih dapat mengikuti aturan dari permainan ini, ia juga masih dapat menentukan kapan ia akan mengambil dan meletakkan disk.</p>
+<p>Sayangnya, Bob juga sedang mabuk. Pada beberapa langkah, Bob dapat saja menabrak salah satu persegi di kiri atau di kanannya dengan peluang yang sama, kecuali Bob sedang perada di pojok ruangan. Pada kasus ini dia hanya dapat bergerak ke satu arah. Walaupun Bob sedang berada dalam keadaan mabuk, dia masih dapat mengikuti aturan dari permainan ini, dan dia juga masih dapat menentukan kapan akan mengambil dan meletakkan cakram.</p>
 
 <p>Animasi berikut ini menunjukkan tampak samping dari sampel permainan untuk <var>n</var> = 3, <var>k</var> = 7, <var>a</var> = 2, <var>b</var> = 4, dan <var>c</var> = 6:</p>
 
 <p align=center><img src={{ site.baseurl }}project/images/p497_hanoi.gif></p>
 
-<p>Misal E(<var>n</var>,<var>k</var>,<var>a</var>,<var>b</var>,<var>c</var>) adalah nilai harapan (expected number) dari banyaknya persegi yang dilewati oleh Bob pada satu kali permainan dengan langkah sebaik mungkin. Sebuah permainan disebut memiliki langkah sebaik mungkin apabila banyaknya disk yang diambil dan diletakkan adalah sekecil mungkin.</p>
+<p>Misalkan E(<var>n</var>,<var>k</var>,<var>a</var>,<var>b</var>,<var>c</var>) adalah nilai harapan (expected number) dari banyaknya persegi yang dilewati oleh Bob pada satu kali permainan dengan langkah sebaik mungkin. Sebuah permainan disebut memiliki langkah sebaik mungkin apabila banyaknya cakram yang diambil dan diletakkan adalah sekecil mungkin.</p>
 
 <p>Hal yang cukup menarik adalah, hasilnya selalu merupakan bilangan bulat. Sebagai contoh, E(2,5,1,3,5) = 60 dan E(3,20,4,9,17) = 2358.</p>
 
